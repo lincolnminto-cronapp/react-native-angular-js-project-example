@@ -1,15 +1,13 @@
 # React Native + CSS modules
 
 ![Platform - Android, iOS and Web](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web-blue.svg)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
+
 
 A simple example app that shows how you can use CSS modules with React Native and React (for browser).
 
 Have a look at the [src](/src) folder to see code examples.
 
-**Quick links:** **[Features](#example-app-features)** • **[Screenshots](#screenshots)** • **[Try it](#try-it)** • **[Documentation](https://github.com/kristerkari/react-native-css-modules#documentation)**
-
-<a href="https://facebook.github.io/react-native/"><img src="images/react-native-logo.png" width="160"></a><img src="images/plus.svg" width="100"><a href="https://github.com/css-modules/css-modules"><img src="images/css-modules-logo.svg" width="170"></a>
+<a href="https://facebook.github.io/react-native/"><img src="images/react-native-logo.png" width="160"></a><img src="images/plus.svg" width="100"><a href="https://github.com/css-modules/css-modules"><img src="images/css-modules-logo.svg" width="170"></a><img src="https://angularjs.org/img/AngularJS-large.png">
 
 ## Example App features
 
@@ -89,13 +87,8 @@ yarn android
 or
 
 ```sh
-yarn web
+yarn web2
 ```
 
 Web app can be accessed by opening `http://localhost:8080` in a browser.
 
-## Screenshots
-
-**iOS - Android - Web**
-
-<img src="screenshots/ios.png" width="33.3333%"><img src="screenshots/android.png" width="33.3333%"><img src="screenshots/web3.png" width="33.3333%">
