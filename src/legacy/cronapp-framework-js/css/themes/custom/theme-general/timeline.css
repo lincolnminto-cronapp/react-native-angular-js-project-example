@@ -1,0 +1,40 @@
+
+/* Timeline */
+.crn-timeline-container {
+    margin: 0;
+}
+
+ul.timeline:before {
+    background-color: var(--colorNeutral80);
+}
+
+ul.timeline .timeline-event>*:nth-child(1) {
+    box-shadow: none;
+    z-index: 0;
+}
+
+ul.timeline .timeline-event>.warning:nth-child(1) {
+    background-color: var(--colorWarning40, #d47500);
+}
+
+ul.timeline .timeline-event>.info:nth-child(1) {
+    background-color: var(--colorPrimary40, #446e9b);
+}
+
+ul.timeline .timeline-event>*:nth-child(2) {
+    box-shadow: none;
+    border: 0;
+    border-radius: var(--borderRadiusSmallest);
+}
+
+ul.timeline .timeline-event>*:nth-child(2):before {
+    border: 0;
+}
+
+ul.timeline .timeline-event .timeline-badge {
+    color: var(--colorNeutral00);
+}
+
+ul.timeline .timeline-event .timeline-heading {
+    color: var(--textColor);
+}

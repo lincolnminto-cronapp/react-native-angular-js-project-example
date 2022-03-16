@@ -1,0 +1,50 @@
+{
+    "name": "crn-image-menu",
+    "text_pt_BR": "Imagem do menu",
+    "text_en_US": "Menu image",
+    "class": "adjust-icon mdi mdi-image",
+    "wrapper": false,
+    "autoWrapper": true,
+    "pallete": false,
+    "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/image-menu.template.html",
+    "properties": {
+        "src": {
+            "removable": false,
+            "type": "projectResource",
+            "resourceType": "image/jpeg,image/gif,image/png,image/svg+xml",
+            "mandatory": true,
+            "order": 1
+        },
+        "ng-init": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-click": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-dblclick": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-mouseenter": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-mouseleave": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-mousemove": {
+            "removable": true,
+            "type": "event"
+        }
+    },
+    "styles": [
+        {
+            "selector": "img#{id}",
+            "text_pt_BR": "Imagem",
+            "text_en_US": "Image"
+        }
+    ]
+}

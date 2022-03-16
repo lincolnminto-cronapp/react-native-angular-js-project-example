@@ -1,0 +1,83 @@
+{
+    "name": "crn-unordered-sub-list",
+    "text_pt_BR": "Sub lista não ordenada",
+    "text_en_US": "Unordered sub list",
+    "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-unordered-sub-list.svg",
+    "description": "Sublista de segundo grau com indicadores redondos",
+    "description_en_US": "Second degree sublist with round indicators",
+    "pallete": false,
+    "category": [
+        "LISTS"
+    ],
+    "wrapper": false,
+    "autoWrapper": true,
+    "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/crn-unordered-sub-list.template.html",
+    "properties": {
+        "class": {
+            "order": 9999
+        },
+        "id": {
+            "order": 2
+        },
+        "listType": {
+            "displayName_pt_BR": "Valor do atributo",
+            "displayName_en_US": "Attribute value"
+        }
+    },
+    "forcedGroup": true,
+    "handleRules": {
+        "canOrder": true,
+        "canActivate": true,
+        "canIncrement": true,
+        "rules": [
+            {
+                "activeSelector": "ul.sub-list li.active",
+                "activeClass": "active",
+                "sourceHTML": "<li class=\"item-sub-list\" data-component=\"crn-list-item\" data-replace=\"true\">Item</li>",
+                "targetSelector": "ul.sub-list"
+            }
+        ]
+    },
+    "attributesForPreview": [
+        {
+            "name": "listType",
+            "type": "options",
+            "target": "style",
+            "values": [
+                {
+                    "key": "list-style-type:circle;",
+                    "value_pt_BR": "Círculo vazio",
+                    "value_en_US": "Circle"
+                },
+                {
+                    "key": "list-style-type:disc;",
+                    "value_pt_BR": "Círculo preenchido",
+                    "value_en_US": "Disc"
+                },
+                {
+                    "key": "list-style-type:square;",
+                    "value_pt_BR": "Quadrado",
+                    "value_en_US": "Square"
+                }
+            ]
+        }
+    ],
+    "childrenProperties": [
+        {
+            "name": "listType",
+            "selector": "ul.sub-list"
+        }
+    ],
+    "styles": [
+        {
+            "selector": "div#{id} ul",
+            "text_pt_BR": "Plano de fundo",
+            "text_en_US": "Background"
+        },
+        {
+            "selector": "div#{id} ul li",
+            "text_pt_BR": "Item da lista",
+            "text_en_US": "List item"
+        }
+    ]
+}

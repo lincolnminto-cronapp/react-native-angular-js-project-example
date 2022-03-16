@@ -1,0 +1,87 @@
+{
+  "name": "crn-table",
+  "designTimeSelector": "table",
+  "wrapper": false,
+  "text_pt_BR": "Tabela Simples",
+  "text_en_US": "Simple Table",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-table.svg",
+  "description": "Tabela com cabeçalho e rodapé",
+  "description_en_US": "Table with header and footer",
+  "category": [
+    "GRIDS"
+  ],
+  "template": "",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "styles": [
+    {
+      "selector": "div#{id} thead th",
+      "text_pt_BR": "Cabeçalho da tabela",
+      "text_en_US": "Table header"
+    },
+    {
+      "selector": "div#{id} tbody tr:nth-child(2n+1)",
+      "text_pt_BR": "Linha ímpar",
+      "text_en_US": "Ood line"
+    },
+    {
+      "selector": "div#{id} tbody tr:nth-child(2n)",
+      "text_pt_BR": "Linha par",
+      "text_en_US": "Even line"
+    },
+    {
+      "selector": "div#{id} tbody tr:hover",
+      "text_pt_BR": "Linha Hover",
+      "text_en_US": "Hover Line"
+    },
+    {
+      "selector": "div#{id} tfoot th",
+      "text_pt_BR": "Rodapé da tabela",
+      "text_en_US": "Table footer"
+    }
+  ],
+  "childrenProperties": [
+    {
+      "name": "crn-datasource",
+      "selector": "div[crn-datasource]",
+      "global": true,
+      "type": "pageDatasource"
+    },
+    {
+      "name": "ng-init",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-click",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    }
+  ]
+}

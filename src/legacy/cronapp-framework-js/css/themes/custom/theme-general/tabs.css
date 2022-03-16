@@ -1,0 +1,49 @@
+.ctn-tab {
+    border-radius: var(--borderRadiusNone);
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.ctn-tab .nav-tabs {
+    border-bottom: 1px solid var(--colorNeutral30);
+}
+
+.ctn-tab .nav-tabs li {
+    background: transparent;
+    border-radius: var(--borderRadiusNone);
+    border: 0;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -2px;
+}
+
+.ctn-tab .nav-tabs li.active {
+    background: transparent;
+    border: 1px solid var(--colorNeutral30);
+    border-bottom: 1px solid var(--colorNeutral00);
+    bottom: 1px;
+    border-radius: 4px 4px 0 0;
+}
+
+.ctn-tab .nav-tabs li a {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    border-radius: var(--borderRadiusNone);
+    padding: var(--distanceExtraSmall) var(--distanceSmall);
+    font-size: 14px;
+    color: var(--colorPrimary40, #446e9b);
+}
+
+.ctn-tab .nav-tabs li a:hover {
+    background-color: var(--colorNeutral10);
+    color: var(--colorPrimary50, #3c6088);
+    border: 0;
+}
+
+.ctn-tab .nav-tabs li.active a,
+.ctn-tab .nav-tabs li.active a:hover {
+    background: transparent;
+    color: var(--colorNeutral140);
+}

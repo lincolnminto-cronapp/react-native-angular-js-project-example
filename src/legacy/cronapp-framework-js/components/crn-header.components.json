@@ -1,0 +1,19 @@
+{
+  "name": "crn-header",
+  "text_pt_BR": "Cabeçalho",
+  "text_en_US": "Header",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-header.svg",
+  "description": "Estrutura com cabeçalho",
+  "description_en_US": "Structure with header",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/header.template.html",
+  "wrapper": false,
+  "forcedGroup": true,
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 3
+    }
+  }
+}

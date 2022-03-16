@@ -1,0 +1,48 @@
+{
+  "name": "crn-cron-dashboard-viewer",
+  "onDrop": "openEditor",
+  "onDoubleClick": "openEditor",
+  "text_pt_BR": "Visualizador de dashboard",
+  "text_en_US": "Dashboard viewer",
+  "order": 2,
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-cron-dashboard-viewer.svg",
+  "description": "Estrutura para criar painel com gráficos",
+  "description_en_US": "Structure for creating dashboard with graphics",
+  "category": [
+      "LAYOUTS"
+  ],
+  "designTimeSelector": "cron-dashboard-viewer",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-dashboard-viewer.template.html",
+  "designTimeDynamic": true,
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-dashboard-viewer.designtime.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "options",
+      "displayName_pt_BR": "Configurações",
+      "displayName_en_US": "Configuration",
+      "removable": false,
+      "global": "true",
+      "selector": "cron-dashboard-viewer",
+      "type": "text",
+      "order": 1,
+      "mandatory": true
+    },
+    {
+      "name": "ng-model",
+      "selector": "cron-dashboard-viewer",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "type": "text",
+      "order": 2,
+      "mandatory": true
+    }
+  ]
+}

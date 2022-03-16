@@ -1,0 +1,90 @@
+.panel {
+    background-color: var(--backgroundColor40, #ffffff);
+    box-shadow: none;
+}
+
+/* Default */
+.panel-default .panel-heading,
+.panel-default .panel-footer {
+    color: var(--textColor40, #333333);
+    background-color: var(--colorDefault50, #eae8e6);
+    border-color: var(--colorDefault60, #d7d4d1);
+}
+
+.panel-default {
+    border-color: var(--colorDefault60, #d7d4d1);
+}
+
+/* Primary */
+
+.panel-primary>.panel-heading,
+.panel-primary>.panel-footer {
+    color: var(--textColorPrimary40, #ffffff);
+    background-color: var(--colorPrimary50, #3c72cf);
+    border-color: var(--colorPrimary60, #335fad);
+}
+
+.panel-primary {
+    border-color: var(--colorPrimary60, #335fad);
+}
+
+/* Sucess */
+
+.panel-success>.panel-heading,
+.panel-success>.panel-footer {
+    color: var(--textColorSuccess40, #ffffff);
+    background-color: var(--colorSuccess50, #37973d);
+    border-color: var(--colorSuccess60, #2e7f33);
+}
+
+.panel-success {
+    border-color: var(--colorSuccess60, #2e7f33);
+}
+
+/* Info */
+.panel-info>.panel-heading,
+.panel-info>.panel-footer {
+    color: var(--textColorCalm40, #ffffff);
+    background-color: var(--colorCalm50, #0fa9d5);
+    border-color: var(--colorCalm60, #0c8db2);
+}
+
+.panel-info {
+    border-color: var(--colorCalm60, #0c8db2);
+}
+
+/* Warning */
+.panel-warning>.panel-heading,
+.panel-warning>.panel-footer {
+    color: var(--textColorWarning40, #ffffff);
+    background-color: var(--colorWarning50, #d29744);
+    border-color: var(--colorWarning60, #b07f39);
+}
+
+.panel-warning {
+    border-color: var(--colorWarning60, #b07f39);
+}
+
+/* Danger */
+.panel-danger>.panel-heading,
+.panel-danger>.panel-footer {
+    color: var(--textColorDanger40, #ffffff);
+    background-color: var(--colorDanger50, #be4945);
+    border-color: var(--colorDanger60, #9f3d3a);
+}
+
+.panel-danger {
+    border-color: var(--colorDanger60, #9f3d3a);
+}
+
+/* Light */
+.panel-light>.panel-heading,
+.panel-light>.panel-footer {
+    color: var(--textColorLight40, #444444);
+    background-color: var(--colorLight50, #dfdfdf);
+    border-color: var(--colorLight60, #bbbbbb);
+}
+
+.panel-light {
+    border-color: var(--colorLight60, #bbbbbb);
+}

@@ -1,0 +1,256 @@
+/* ==== FONTS ====*/
+@import url("font/fonts.css");
+
+/* ==== VARIABLES ==== */
+:root {
+
+    /* Font */
+    --fontFamily: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+    --textColor: #111;
+
+    --textSmallSize: 12px;
+    --textNormalSize: 14px;
+    --textMediumSize: 16px;
+    --textBigSize: 18px;
+    --textExtraBigSize: 23px;
+
+    --textColor10: #d6d6d6;
+    --textColor20: #aeaeae;
+    --textColor30: #7c7c7c;
+    --textColor40: #111111;
+    --textColor50: #0f0f0f;
+    --textColor60: #0c0c0c;
+    --textColor70: #090909;
+
+    /* Menus - Sizes and Distances */
+    --menuVerticalWidth: 270px;
+    --menuSideSize: 20px;
+    --menuItemBarSize: 6px;
+    --menuElementOverallPadding: 10px;
+    --menuItemPaddingSize: calc(var(--menuElementOverallPadding) + 5px);
+    --menuItemIconWidth: 25px;
+
+    /* Background */
+    --backgroundColor10: #ffffff;
+    --backgroundColor20: #ffffff;
+    --backgroundColor30: #ffffff;
+    --backgroundColor40: #ffffff;
+    --backgroundColor50: #dfdfdf;
+    --backgroundColor60: #bbbbbb;
+    --backgroundColor70: #8c8c8c;
+
+    /* Distances */
+    --distanceNone: 0;
+    --distanceSmallest: 5px;
+    --distanceExtraSmall: 10px;
+    --distanceSmall: 15px;
+    --distanceMedium: 20px;
+    --distanceBig: 30px;
+    --distanceGiant: 40px;
+    --distanceTitan: 60px;
+
+    /* Border Radius */
+    --borderRadiusNone: 0;
+    --borderRadiusSmallest: 5px;
+    --borderRadiusExtraSmall: 10px;
+    --borderRadiusSmall: 15px;
+    --borderRadiusBig: 30px;
+    --borderRadiusGiant: 40px;
+    --borderRadiusTitan: 60px;
+    --borderRadiusFull: 99999px;
+
+    /* Color - Theme default */
+    --colorDefault10: #d8d9e3;
+    --colorDefault20: #b3b5ca;
+    --colorDefault30: #8689af;
+    --colorDefault40: #3b448e;
+    --colorDefault50: #343c7c;
+    --colorDefault60: #2b3268;
+    --colorDefault70: #20254e;
+
+    --textColorDefault10: #8c8c8c;
+    --textColorDefault20: #bbbbbb;
+    --textColorDefault30: #dfdfdf;
+    --textColorDefault40: #ffffff;
+    --textColorDefault50: #ffffff;
+    --textColorDefault60: #ffffff;
+    --textColorDefault70: #ffffff;
+
+    /* Color - Primary (web) - Positive (mobile) */
+    --colorPrimary10: #d8e0fc;
+    --colorPrimary20: #b2c5fa;
+    --colorPrimary30: #85a5f7;
+    --colorPrimary40: #387ef5;
+    --colorPrimary50: #316ed7;
+    --colorPrimary60: #295cb3;
+    --colorPrimary70: #1f4586;
+
+    --textColorPrimary10: #8c8c8c;
+    --textColorPrimary20: #bbbbbb;
+    --textColorPrimary30: #dfdfdf;
+    --textColorPrimary40: #ffffff;
+    --textColorPrimary50: #ffffff;
+    --textColorPrimary60: #ffffff;
+    --textColorPrimary70: #ffffff;
+
+    /* Color - Success (web) - Balanced (mobile) */
+    --colorSuccess10: #d7f1dc;
+    --colorSuccess20: #b2e6bb;
+    --colorSuccess30: #83da95;
+    --colorSuccess40: #33cd5f;
+    --colorSuccess50: #2db353;
+    --colorSuccess60: #259646;
+    --colorSuccess70: #1c7034;
+
+    --textColorSuccess10: #8c8c8c;
+    --textColorSuccess20: #bbbbbb;
+    --textColorSuccess30: #dfdfdf;
+    --textColorSuccess40: #ffffff;
+    --textColorSuccess50: #ffffff;
+    --textColorSuccess60: #ffffff;
+    --textColorSuccess70: #ffffff;
+
+    /* Color - Warning (web) - energized (mobile) */
+    --colorWarning10: #fff0d5;
+    --colorWarning20: #ffe4ae;
+    --colorWarning30: #ffd77b;
+    --colorWarning40: #ffc900;
+    --colorWarning50: #dfb000;
+    --colorWarning60: #bb9300;
+    --colorWarning70: #8c6e00;
+
+    --textColorWarning10: #8c8c8c;
+    --textColorWarning20: #bbbbbb;
+    --textColorWarning30: #dfdfdf;
+    --textColorWarning40: #ffffff;
+    --textColorWarning50: #ffffff;
+    --textColorWarning60: #ffffff;
+    --textColorWarning70: #ffffff;
+
+    /* Color - Danger (web) - assertive (mobile) */
+    --colorDanger10: #fad9d8;
+    --colorDanger20: #f7b5b3;
+    --colorDanger30: #f38a85;
+    --colorDanger40: #ef473a;
+    --colorDanger50: #d13e33;
+    --colorDanger60: #af342a;
+    --colorDanger70: #832720;
+
+    --textColorDanger10: #8c8c8c;
+    --textColorDanger20: #bbbbbb;
+    --textColorDanger30: #dfdfdf;
+    --textColorDanger40: #ffffff;
+    --textColorDanger50: #ffffff;
+    --textColorDanger60: #ffffff;
+    --textColorDanger70: #ffffff;
+
+    /* Color - Royal (mobile) */
+    --colorRoyal10: #e2ddf9;
+    --colorRoyal20: #c8bef4;
+    --colorRoyal30: #ab9aef;
+    --colorRoyal40: #886aea;
+    --colorRoyal50: #775dcd;
+    --colorRoyal60: #644eab;
+    --colorRoyal70: #4a3a80;
+
+    --textColorRoyal10: #8c8c8c;
+    --textColorRoyal20: #bbbbbb;
+    --textColorRoyal30: #dfdfdf;
+    --textColorRoyal40: #ffffff;
+    --textColorRoyal50: #ffffff;
+    --textColorRoyal60: #ffffff;
+    --textColorRoyal70: #ffffff;
+
+    /* Color - Calm (mobile) */
+    --colorCalm10: #d6eefb;
+    --colorCalm20: #aee0f9;
+    --colorCalm30: #7cd1f6;
+    --colorCalm40: #11c1f3;
+    --colorCalm50: #0fa9d5;
+    --colorCalm60: #0c8db2;
+    --colorCalm70: #096a85;
+
+    --textColorCalm10: #8c8c8c;
+    --textColorCalm20: #bbbbbb;
+    --textColorCalm30: #dfdfdf;
+    --textColorCalm40: #ffffff;
+    --textColorCalm50: #ffffff;
+    --textColorCalm60: #ffffff;
+    --textColorCalm70: #ffffff;
+
+    /* Color - Light (mobile) */
+    --colorLight10: #ffffff;
+    --colorLight20: #ffffff;
+    --colorLight30: #ffffff;
+    --colorLight40: #ffffff;
+    --colorLight50: #dfdfdf;
+    --colorLight60: #bbbbbb;
+    --colorLight70: #8c8c8c;
+
+    --textColorLight10: #252525;
+    --textColorLight20: #323232;
+    --textColorLight30: #3c3c3c;
+    --textColorLight40: #444444;
+    --textColorLight50: #3c3c3c;
+    --textColorLight60: #b5b5b5;
+    --textColorLight70: #d9d9d9;
+
+    /* Color - Stable (mobile) */
+    --colorStable10: #fdfdfd;
+    --colorStable20: #fbfbfb;
+    --colorStable30: #fafafa;
+    --colorStable40: #f8f8f8;
+    --colorStable50: #d9d9d9;
+    --colorStable60: #b6b6b6;
+    --colorStable70: #888888;
+
+    --textColorStable10: #252525;
+    --textColorStable20: #323232;
+    --textColorStable30: #3c3c3c;
+    --textColorStable40: #444444;
+    --textColorStable50: #898989;
+    --textColorStable60: #b5b5b5;
+    --textColorStable70: #d9d9d9;
+
+    /* Color - Dark (mobile) */
+    --colorDark10: #d9d9d9;
+    --colorDark20: #b5b5b5;
+    --colorDark30: #898989;
+    --colorDark40: #444444;
+    --colorDark50: #3c3c3c;
+    --colorDark60: #323232;
+    --colorDark70: #252525;
+
+    --textColorDark10: #8c8c8c;
+    --textColorDark20: #bbbbbb;
+    --textColorDark30: #dfdfdf;
+    --textColorDark40: #ffffff;
+    --textColorDark50: #ffffff;
+    --textColorDark60: #ffffff;
+    --textColorDark70: #ffffff;
+
+    /* Color - Neutral (web e mobile) */
+    --colorNeutral00: #FFFFFF;
+    --colorNeutral10: #F1F1F1;
+    --colorNeutral20: #E3E3E3;
+    --colorNeutral30: #D5D5D5;
+    --colorNeutral40: #C7C7C7;
+    --colorNeutral50: #B9B9B9;
+    --colorNeutral60: #ACACAC;
+    --colorNeutral70: #9E9E9E;
+    --colorNeutral80: #909090;
+    --colorNeutral90: #828282;
+    --colorNeutral100: #747474;
+    --colorNeutral110: #666666;
+    --colorNeutral120: #5D5D5D;
+    --colorNeutral130: #535353;
+    --colorNeutral140: #4A4A4A;
+    --colorNeutral150: #414141;
+    --colorNeutral160: #383838;
+    --colorNeutral170: #2E2E2E;
+    --colorNeutral180: #252525;
+    --colorNeutral190: #1C1C1C;
+    --colorNeutral200: #131313;
+    --colorNeutral210: #090909;
+    --colorNeutral220: #000000;
+}

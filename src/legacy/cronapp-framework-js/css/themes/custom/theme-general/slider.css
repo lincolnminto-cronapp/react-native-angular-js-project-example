@@ -1,0 +1,15 @@
+.k-slider .k-slider-track,
+.k-slider .k-slider-selection {
+    border-radius: var(--borderRadiusSmallest);
+}
+
+.k-slider .k-slider-selection {
+    background-color: var(--colorDefault10);
+    margin-top: -4px;
+}
+
+.k-slider .k-draghandle,
+.k-slider .k-draghandle.k-state-focused,
+.k-slider .k-draghandle.k-state-focused:link {
+    background-color: var(--backgroundColor);
+}

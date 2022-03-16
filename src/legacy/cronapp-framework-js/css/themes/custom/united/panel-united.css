@@ -1,0 +1,90 @@
+.panel {
+    background-color: var(--backgroundColor40, #ffffff);
+    box-shadow: none;
+}
+
+/* Default */
+.panel-default .panel-heading,
+.panel-default .panel-footer {
+    color: var(--textColor40, #333333);
+    background-color: var(--colorDefault10, #eae8e6);
+    border-color: var(--colorDefault20, #d7d4d1);
+}
+
+.panel-default {
+    border-color: var(--colorDefault20, #d7d4d1);
+}
+
+/* Primary */
+
+.panel-primary>.panel-heading,
+.panel-primary>.panel-footer {
+    color: var(--textColorPrimary40, #ffffff);
+    background-color: var(--colorPrimary40, #e95420);
+    border-color: transparent
+}
+
+.panel-primary {
+    border-color: var(--colorPrimary40, #e95420);
+}
+
+/* Sucess */
+
+.panel-success>.panel-heading,
+.panel-success>.panel-footer {
+    color: var(--colorSuccess70, #1f6329);
+    background-color: var(--colorSuccess10, #d8ebd9);
+    border-color: var(--colorSuccess20, #b2dab6);
+}
+
+.panel-success {
+    border-color: var(--colorSuccess20, #b2dab6);
+}
+
+/* Info */
+.panel-info>.panel-heading,
+.panel-info>.panel-footer {
+    color: var(--colorCalm70, #41162d);
+    background-color: var(--colorCalm10, #dfd7da);
+    border-color: var(--colorCalm20, #c2b0b8);
+}
+
+.panel-info {
+    border-color: var(--colorCalm20, #c2b0b8);
+}
+
+/* Warning */
+.panel-warning>.panel-heading,
+.panel-warning>.panel-footer {
+    color: var(--colorWarning70, #836422);
+    background-color: var(--colorWarning10, #faecd8);
+    border-color: var(--colorWarning20, #f7dbb3);
+}
+
+.panel-warning {
+    border-color: var(--colorWarning20, #f7dbb3);
+}
+
+/* Danger */
+.panel-danger>.panel-heading,
+.panel-danger>.panel-footer {
+    color: var(--colorDanger70, #7a1f18);
+    background-color: var(--colorDanger10, #f6d8d7);
+    border-color: var(--colorDanger20, #eeb2b1);
+}
+
+.panel-danger {
+    border-color: var(--colorDanger20, #eeb2b1);
+}
+
+/* Light */
+.panel-light>.panel-heading,
+.panel-light>.panel-footer {
+    color: var(--colorLight70, #1f6329);
+    background-color: var(--colorLight10, #d8ebd9);
+    border-color: var(--colorLight20, #b2dab6);
+}
+
+.panel-light {
+    border-color: var(--colorLight20, #b2dab6);
+}

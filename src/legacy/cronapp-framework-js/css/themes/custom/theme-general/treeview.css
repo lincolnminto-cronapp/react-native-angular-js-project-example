@@ -1,0 +1,74 @@
+
+/* Tree */
+.k-treeview .k-item {
+    margin-bottom: 5px;
+    color: var(--colorDefault40, #474949);
+    background-color: var(--colorDefault10, #d9d9d9);
+    border-radius: var(--borderRadiusExtraSmall);
+    padding: 0;
+    overflow: hidden;
+}
+
+.k-treeview .k-item .k-item {
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+.k-treeview .k-icon {
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.k-treeview .k-icon:before {
+    display: none;
+}
+
+.k-treeview .k-in {
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.k-treeview .k-icon.k-i-collapse {
+    margin-top: 0;
+}
+
+.k-treeview .k-icon.k-i-collapse .k-in {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.k-treeview .k-icon.k-i-expand .k-in:before,
+.k-treeview .k-icon.k-i-collapse .k-in:before {
+    font-family: "WebComponentsIcons";
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.k-treeview .k-icon.k-i-expand .k-in:before {
+    content: "\e005";
+}
+
+.k-treeview .k-icon.k-i-collapse .k-in:before {
+    content: "\e001";
+}
+
+.k-treeview .k-in.k-state-hover,
+.k-treeview .k-in.k-state-selected {
+    border-radius: var(--borderRadiusExtraSmall);
+}
+
+.k-treeview .k-in.k-state-hover {
+    color: var(--colorDefault40, #474949);
+    background-color: var(--colorDefault20, #b5b6b6);
+}
+
+.k-treeview .k-in.k-state-selected {
+    color: var(--textColorDefault40, #ffffff);
+    background-color: var(--colorDefault40, #474949);
+}
+
+.k-treeview .k-state-focused {
+    box-shadow: none;
+}

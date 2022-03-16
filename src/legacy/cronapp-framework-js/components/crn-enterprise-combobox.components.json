@@ -1,0 +1,155 @@
+{
+  "name": "crn-enterprise-combobox",
+  "onDrop": "openEditor",
+  "onDoubleClick": "openEditor",
+  "text_pt_BR": "Caixa de seleção fixa",
+  "text_en_US": "Combobox",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-enterprise-combobox.svg",
+  "description": "Campo de seleção com valores pré-definido",
+  "description_en_US": "Selection field with predefined values",
+  "category": [
+    "INPUTS", "FORMS", "COMBOS"
+  ],
+  "order": 9,
+  "setRandomId": false,
+  "designTimeDynamic": true,
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-combobox.designtime.html",
+  "designTimeSelector": "cron-select",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-combobox.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "ng-change",
+      "selector": "cron-select",
+      "displayName_pt_BR": "Ao Alterar",
+      "displayName_en_US": "On Change",
+      "type": "event"
+    },
+    {
+      "name": "cron-disabled",
+      "selector": "cron-select",
+      "displayName_en_US": "Disabled",
+      "displayName_pt_BR": "Desabilitado",
+      "type": "logic"
+    },
+    {
+      "name": "ng-select",
+      "selector": "cron-select",
+      "displayName_pt_BR": "Ao Selecionar",
+      "displayName_en_US": "On Select",
+      "type": "event"
+    },
+    {
+      "name": "ng-close",
+      "selector": "cron-select",
+      "displayName_pt_BR": "Ao Fechar",
+      "displayName_en_US": "On Close",
+      "type": "event"
+    },
+    {
+      "name": "ng-data-bound",
+      "selector": "cron-select",
+      "displayName_pt_BR": "Ao Carregar",
+      "displayName_en_US": "On DataBound",
+      "type": "event"
+    },
+    {
+      "name": "ng-filtering",
+      "selector": "cron-select",
+      "displayName_pt_BR": "Ao Filtrar",
+      "displayName_en_US": "On Filtering",
+      "type": "event"
+    },
+    {
+      "name": "options",
+      "selector": "cron-select",
+      "displayName_pt_BR": "Configuração",
+      "displayName_en_US": "Configuration",
+      "type": "text",
+      "order": 1,
+      "mandatory": true
+    },
+    {
+      "name": "ng-model",
+      "selector": "cron-select",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "type": "text",
+      "order": 3,
+      "mandatory": true
+    },
+    {
+      "name": "content",
+      "selector": "label",
+      "displayName_pt_BR": "Título",
+      "displayName_en_US": "Title",
+      "type": "text",
+      "order": 2
+    },
+    {
+      "name": "ng-required",
+      "selector": "cron-select",
+      "type": "logic",
+      "order": 4
+    },
+    {
+      "name": "validationMessage",
+      "selector": "cron-select",
+      "displayName_pt_BR": "Texto quando requerido",
+      "displayName_en_US": "Text when required",
+      "type": "text",
+      "mandatory": false,
+      "order": 5
+    },
+    {
+      "name": "id",
+      "selector": "cron-select",
+      "type": "text",
+      "onSave": "javascript:(value)=> {this.currentObject.parent().find('label').attr('for', arguments[0]); return arguments[0];}"
+    }
+  ],
+  "styles": [
+    {
+      "selector": "div#{id}.form-group label",
+      "text_pt_BR": "Título",
+      "text_en_US": "Title"
+    },
+    {
+      "selector": "input#{id}",
+      "text_pt_BR": "Caixa de seleção",
+      "text_en_US": "Combobox"
+    },
+    {
+      "selector": "input#{id}::placeholder",
+      "text_pt_BR": "Sugestão",
+      "text_en_US": "Placeholder"
+    },
+    {
+      "selector": "div#{id} .k-widget .k-dropdown-wrap .k-select",
+      "text_pt_BR": "Seta",
+      "text_en_US": "Dropdown"
+    },
+    {
+      "selector": "#{id}_listbox .k-state-selected",
+      "text_pt_BR": "Item Selecionado",
+      "text_en_US": "Selected Item"
+    },
+    {
+      "selector": "#{id}-list",
+      "text_pt_BR": "Lista de Itens",
+      "text_en_US": "Item List"
+    },
+    {
+      "selector": "#{id}_listbox .k-state-hover",
+      "text_pt_BR": "Item da Lista Hover",
+      "text_en_US": "Item List Hover"
+    }
+  ]
+}

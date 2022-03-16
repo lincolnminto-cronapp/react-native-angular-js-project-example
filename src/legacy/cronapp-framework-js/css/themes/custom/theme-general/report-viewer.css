@@ -1,0 +1,63 @@
+/* Report Viewer */
+div[id^="crn-cron-report-viewer"]>*>div {
+    border-radius: var(--borderRadiusExtraSmall);
+}
+
+div.stiJsViewerMainPanel,
+div.stiJsViewerToolBar {
+    z-index: unset;
+}
+
+div.stiJsViewerMainPanel {
+    border: 1px solid var(--colorNeutral40);
+    border-radius: var(--borderRadiusExtraSmall);
+    overflow: hidden;
+}
+
+div.stiJsViewerToolBar {
+    background-color: var(--colorNeutral10);
+    padding: 2px var(--distanceMedium);
+}
+
+div.stiJsViewerToolBar>div {
+    background: transparent;
+}
+
+div.stiJsViewerToolBar .stiJsViewerToolBarTable {
+    border: 0;
+    background: transparent;
+}
+
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td {
+    color: var(--colorNeutral160);
+    font-family: 'Work Sans';
+}
+
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td div.stiJsViewerStandartSmallButtonOver,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td div.stiJsViewerStandartSmallButtonSelected {
+    background-color: var(--colorNeutral30);
+    border-radius: var(--borderRadiusSmallest);
+}
+
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td div table.stiJsViewerClearAllStyles {
+    margin-top: -5px;
+}
+
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(5) div table.stiJsViewerClearAllStyles,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(6) div table.stiJsViewerClearAllStyles,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(7) div table.stiJsViewerClearAllStyles,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(9) div table.stiJsViewerClearAllStyles,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(12) div table.stiJsViewerClearAllStyles,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(13) div table.stiJsViewerClearAllStyles,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(15) div table.stiJsViewerClearAllStyles,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(16) div table.stiJsViewerClearAllStyles,
+div.stiJsViewerToolBar .stiJsViewerToolBarTable td:nth-child(18) div table.stiJsViewerClearAllStyles {
+    margin-top: 0;
+}
+
+div.stiJsViewerMenu {
+    border-radius: var(--borderRadiusSmallest);
+    box-shadow: none;
+    border-color: var(--colorDefault10, #d9d9d9);
+    margin-top: -3px;
+}

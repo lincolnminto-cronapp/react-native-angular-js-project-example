@@ -1,0 +1,75 @@
+.btn,
+.btn.btn-outline {
+    border-style: solid;
+    border-width: 0 1px 4px 1px;
+}
+
+/* Theme default */
+.btn.btn-default:hover,
+.btn.btn-default,
+.btn.btn-default:active,
+.btn.btn-default.activated,
+.btn.btn-default.active {
+    background-color: var(--colorDefault40, #f0f0f0);
+    border-color: var(--colorDefault50, #d2d2d2);
+}
+
+/* Primary */
+.btn.btn-primary:hover,
+.btn.btn-primary,
+.btn.btn-primary:active,
+.btn.btn-primary.activated,
+.btn.btn-primary.active {
+    background-color: var(--colorPrimary40, #158cba);
+    border-color: var(--colorPrimary60, #0f6788);
+}
+
+/* info */
+.btn.btn-info:hover,
+.btn.btn-info,
+.btn.btn-info:active,
+.btn.btn-info.active,
+.btn.btn-info.activated {
+    background-color: var(--colorCalm40, #75caeb);
+    border-color: var(--colorCalm50, #66b1ce);
+}
+
+/* Danger */
+.btn.btn-danger:hover,
+.btn.btn-danger,
+.btn.btn-danger:active,
+.btn.btn-danger.active,
+.btn.btn-danger.activated {
+    background-color: var(--colorDanger40, #ff4136);
+    border-color: var(--colorDanger50, #df392f);
+}
+
+/* Warning */
+.btn.btn-warning:hover,
+.btn.btn-warning,
+.btn.btn-warning:active,
+.btn.btn-warning.active,
+.btn.btn-warning.activated {
+    background-color: var(--colorWarning40, #ff851b);
+    border-color: var(--colorWarning50, #df7418);
+}
+
+/* Success */
+.btn.btn-success:hover,
+.btn.btn-success,
+.btn.btn-success:active,
+.btn.btn-success.active,
+.btn.btn-success.activated {
+    background-color: var(--colorSuccess40, #28b62c);
+    border-color: var(--colorSuccess50, #239f27);
+}
+
+/* Light */
+.btn.btn-light:hover,
+.btn.btn-light,
+.btn.btn-light:active,
+.btn.btn-light.active,
+.btn.btn-light.activated {
+    background-color: var(--colorLight40, #f6f6f6);
+    border-color: var(--colorLight50, #d7d7d7);
+}

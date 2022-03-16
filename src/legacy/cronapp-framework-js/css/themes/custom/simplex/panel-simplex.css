@@ -1,0 +1,90 @@
+.panel {
+    background-color: var(--backgroundColor10, #ffffff);
+    box-shadow: none;
+}
+
+/* Default */
+.panel-default .panel-heading,
+.panel-default .panel-footer {
+    color: var(--textColor40, #777777);
+    background-color: var(--backgroundColor40, #fcfcfc);
+    border-color: var(--backgroundColor50, #dddddd);
+}
+
+.panel-default {
+    border-color: var(--backgroundColor50, #dddddd);
+}
+
+/* Primary */
+
+.panel-primary>.panel-heading,
+.panel-primary>.panel-footer {
+    color: var(--textColorPrimary40, #ffffff);
+    background-color: var(--colorPrimary40, #d9230f);
+    border-color: transparent
+}
+
+.panel-primary {
+    border-color: var(--colorPrimary40, #d9230f);
+}
+
+/* Sucess */
+
+.panel-success>.panel-heading,
+.panel-success>.panel-footer {
+    color: var(--textColorSuccess40, #ffffff);
+    background-color: var(--colorSuccess40, #469408);
+    border-color: transparent
+}
+
+.panel-success {
+    border-color: var(--colorSuccess40, #469408);
+}
+
+/* Info */
+.panel-info>.panel-heading,
+.panel-info>.panel-footer {
+    color: var(--textColorCalm40, #ffffff);
+    background-color: var(--colorCalm40, #029acf);
+    border-color: transparent
+}
+
+.panel-info {
+    border-color: var(--colorCalm40, #029acf);
+}
+
+/* Warning */
+.panel-warning>.panel-heading,
+.panel-warning>.panel-footer {
+    color: var(--textColorWarning40, #ffffff);
+    background-color: var(--colorWarning40, #d9831f);
+    border-color: transparent
+}
+
+.panel-warning {
+    border-color: var(--colorWarning40, #d9831f);
+}
+
+/* Danger */
+.panel-danger>.panel-heading,
+.panel-danger>.panel-footer {
+    color: var(--textColorDanger40, #ffffff);
+    background-color: var(--colorDanger40, #9b479f);
+    border-color: transparent
+}
+
+.panel-danger {
+    border-color: var(--colorDanger40, #9b479f);
+}
+
+/* Light */
+.panel-light>.panel-heading,
+.panel-light>.panel-footer {
+    color: var(--textColor40, #3e3f3a);
+    background-color: var(--backgroundColor40, #fcfcfc);
+    border-color: var(--backgroundColor50, #dddddd);
+}
+
+.panel-light {
+    border-color: var(--backgroundColor50, #dddddd);
+}

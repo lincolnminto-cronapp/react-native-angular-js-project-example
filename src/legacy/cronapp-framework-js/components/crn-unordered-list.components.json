@@ -1,0 +1,82 @@
+{
+    "name": "crn-unordered-list",
+    "text_pt_BR": "Lista não ordenada",
+    "text_en_US": "Unordered list",
+    "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-unordered-list.svg",
+    "description": "Lista em tópicos com indicadores redondos",
+    "description_en_US": "List on topics with round indicators",
+    "pallete": false,
+    "category": [
+        "LISTS"
+    ],
+    "wrapper": true,
+    "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/crn-unordered-list.template.html",
+    "properties": {
+        "class": {
+            "order": 9999
+        },
+        "id": {
+            "order": 2
+        },
+        "list-type": {
+            "displayName_pt_BR": "Valor do atributo",
+            "displayName_en_US": "Attribute value"
+        }
+    },
+    "forcedGroup": true,
+    "handleRules": {
+        "canOrder": true,
+        "canActivate": true,
+        "canIncrement": true,
+        "rules": [
+            {
+                "activeSelector": "ul.list li.active",
+                "activeClass": "active",
+                "sourceHTML": "<li class=\"item-list\" data-component=\"crn-list-item\" data-replace=\"true\">Item</li>",
+                "targetSelector": "ul.list"
+            }
+        ]
+    },
+    "attributesForPreview": [
+        {
+            "name": "list-type",
+            "type": "options",
+            "target": "style",
+            "values": [
+                {
+                    "key": "list-style-type:circle;",
+                    "value_pt_BR": "Círculo vazio",
+                    "value_en_US": "Circle"
+                },
+                {
+                    "key": "list-style-type:disc;",
+                    "value_pt_BR": "Círculo preenchido",
+                    "value_en_US": "Disc"
+                },
+                {
+                    "key": "list-style-type:square;",
+                    "value_pt_BR": "Quadrado",
+                    "value_en_US": "Square"
+                }
+            ]
+        }
+    ],
+    "childrenProperties": [
+        {
+            "name": "list-type",
+            "selector": "ul.list"
+        }
+    ],
+    "styles": [
+        {
+            "selector": "div#{id} ul.list",
+            "text_pt_BR": "Plano de fundo",
+            "text_en_US": "Background"
+        },
+        {
+            "selector": "div#{id} ul.list li",
+            "text_pt_BR": "Item da lista",
+            "text_en_US": "List item"
+        }
+    ]
+}

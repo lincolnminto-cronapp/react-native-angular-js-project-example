@@ -1,0 +1,161 @@
+{
+    "name": "crn-carousel-item",
+    "text_pt_BR": "Item do Carrossel",
+    "text_en_US": "Carousel item",
+    "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-carousel.svg",
+    "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/crn-carousel-item.template.html",
+    "wrapper": false,
+    "pallete": false,
+    "forcedGroup": true,
+    "properties": {
+        "class": {
+            "order": 9999
+        },
+        "id": {
+            "order": 3
+        },
+        "width": {
+            "displayName_pt_BR": "Largura da imagem",
+            "displayName_en_US": "Image width",
+            "order": 1
+        },
+        "height": {
+            "displayName_pt_BR": "Altura da imagem",
+            "displayName_en_US": "Image height",
+            "order": 2
+        }
+    },
+    "styles": [
+        {
+          "selector": "#{id} .carousel-caption h1",
+          "text_pt_BR": "Título",
+          "text_en_US": "Title"
+        },
+        {
+          "selector": "#{id} .carousel-caption h2",
+          "text_pt_BR": "Subtítulo",
+          "text_en_US": "Subtitle"
+        }
+    ],
+    "attributesForPreview": [
+        {
+            "name": "object-fit",
+            "target": "style",
+            "type": "options",
+            "values": [
+                {
+                    "key": "object-fit: cover;",
+                    "value_pt_BR": "Proporcional (padrão)",
+                    "value_en_US": "Proportional (default)"
+                },
+                {
+                    "key": "object-fit: contain;",
+                    "value_pt_BR": "Ajustado",
+                    "value_en_US": "Adjusted"
+                },
+                {
+                    "key": "object-fit: fill;",
+                    "value_pt_BR": "Preencher",
+                    "value_en_US": "Fill"
+                },
+                {
+                    "key": "object-fit: none;",
+                    "value_pt_BR": "Nenhum",
+                    "value_en_US": "None"
+                }
+            ]
+        },
+        {
+            "name": "title-position",
+            "type": "btngroup",
+            "target": "class",
+            "values": [
+                {
+                    "key": "text-left",
+                    "value": "Left",
+                    "icon": "mdi mdi-ray-start"
+                },
+                {
+                    "key": "text-center",
+                    "value": "Center",
+                    "icon": "mdi mdi-ray-vertex"
+                },
+                {
+                    "key": "text-right",
+                    "value": "Right",
+                    "icon": "mdi mdi-ray-end"
+                }
+            ]
+        },
+        {
+            "name": "subtitle-position",
+            "type": "btngroup",
+            "target": "class",
+            "values": [
+                {
+                    "key": "text-left",
+                    "value": "Left",
+                    "icon": "mdi mdi-ray-start"
+                },
+                {
+                    "key": "text-center",
+                    "value": "Center",
+                    "icon": "mdi mdi-ray-vertex"
+                },
+                {
+                    "key": "text-right",
+                    "value": "Right",
+                    "icon": "mdi mdi-ray-end"
+                }
+            ]
+        }
+    ],
+    "childrenProperties": [
+        {
+            "name": "src",
+            "selector": "img",
+            "type": "projectResource",
+            "displayName_pt_BR": "Imagem",
+            "displayName_en_US": "Image",
+            "resourceType": "image/jpeg,image/gif,image/png",
+            "order": 1
+        },
+        {
+            "name": "object-fit",
+            "selector": "img",
+            "displayName_pt_BR": "Preenchimento da imagem",
+            "displayName_en_US": "Image filling",
+            "order": 2
+        },
+        {
+            "name": "content",
+            "selector": "h1",
+            "displayName_pt_BR": "Título",
+            "displayName_en_US": "Title",
+            "type": "text",
+            "order": 5
+        },
+        {
+            "name": "title-position",
+            "selector": "h1",
+            "displayName_pt_BR": "Posição do título",
+            "displayName_en_US": "Title position",
+            "order": 6
+        },
+        {
+            "name": "content",
+            "selector": "h2",
+            "displayName_pt_BR": "Subtítulo",
+            "displayName_en_US": "SubtTitle",
+            "type": "text",
+            "order": 7
+        },
+        {
+            "name": "subtitle-position",
+            "selector": "h2",
+            "displayName_pt_BR": "Posição do subtìtulo",
+            "displayName_en_US": "Subtitle position",
+            "order": 8
+        }
+    ]
+}

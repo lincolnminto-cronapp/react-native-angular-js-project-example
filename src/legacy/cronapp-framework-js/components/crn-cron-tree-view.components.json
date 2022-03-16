@@ -1,0 +1,82 @@
+{
+  "name": "crn-cron-tree-view",
+  "onDrop": "openEditor",
+  "onDoubleClick": "openEditor",
+  "text_pt_BR": "Árvore",
+  "text_en_US": "TreeView",
+  "order": 2,
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-tree-view.svg",
+  "description": "Lista que empilha dados iguais",
+  "description_en_US": "List that stacks equal data",
+  "category": [
+    "LAYOUTS"
+  ],
+  "designTimeDynamic": true,
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-tree-view.designtime.html",
+  "designTimeSelector": "cron-tree-view",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-tree-view.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "options",
+      "displayName_pt_BR": "Configurações",
+      "displayName_en_US": "Configuration",
+      "removable": false,
+      "global": "true",
+      "selector": "cron-tree-view",
+      "type": "text",
+      "order": 1,
+      "mandatory": true
+    },
+    {
+      "name": "ng-model",
+      "selector": "cron-tree-view",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "type": "text",
+      "order": 2,
+      "mandatory": true
+    },
+    {
+      "name": "ng-click",
+      "selector": "cron-tree-view",
+      "removable": true,
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "cron-tree-view",
+      "removable": true,
+      "type": "event"
+    }
+  ],
+  "styles": [
+    {
+      "selector": "div#{id} .k-treeview .k-i-collapse, div#{id} .k-treeview .k-i-expand",
+      "text_pt_BR": "Ícone",
+      "text_en_US": "Icon"
+    },
+    {
+      "selector": "div#{id} .k-treeview .k-i-collapse .k-in, div#{id} .k-treeview .k-i-expand .k-in",
+      "text_pt_BR": "Item",
+      "text_en_US": "Item"
+    },
+    {
+      "selector": "div#{id} .k-treeview .k-item > .k-group .k-in",
+      "text_pt_BR": "SubItem",
+      "text_en_US": "SubItem"
+    },
+    {
+      "selector": "div#{id} .k-treeview .k-in.k-state-selected",
+      "text_pt_BR": "Item selecionado",
+      "text_en_US": "SubItem"
+    }
+  ]
+}

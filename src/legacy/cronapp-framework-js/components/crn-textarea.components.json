@@ -1,0 +1,192 @@
+{
+  "name": "crn-textarea",
+  "text_pt_BR": "Área de texto",
+  "text_en_US": "Textarea",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-textarea.svg",
+  "description": "Campo para inserir texto longo",
+  "description_en_US": "Long text input field",
+  "category": [
+    "INPUTS", "FORMS"
+  ],
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/textarea.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "rows": {
+    "displayName": "rows"
+  },
+  "childrenProperties": [
+    {
+      "name": "content",
+      "selector": "label",
+      "displayName_pt_BR": "Título",
+      "displayName_en_US": "Title",
+      "type": "content",
+      "order": 1
+    },
+    {
+      "name": "ng-model",
+      "selector": "textarea",
+      "type": "text",
+      "mandatory": true
+    },
+    {
+      "name": "rows",
+      "selector": "textarea",
+      "displayName_pt_BR": "Quantidade de Linhas",
+      "displayName_en_US": "Number of Lines",
+      "type": "text",
+      "order": 3
+    },
+    {
+      "name": "maxlength",
+      "selector": "textarea",
+      "displayName_pt_BR": "Máximo de caracteres",
+      "displayName_en_US": "maximum characters",
+      "type": "text",
+      "order": 4
+    },
+    {
+      "name": "resize",
+      "selector": "textarea",
+      "displayName_pt_BR": "Redimensionável",
+      "displayName_en_US": "Resize",
+      "type": "text",
+      "order": 5
+    },
+    {
+      "name": "validationMessage",
+      "selector": "textarea",
+      "displayName_pt_BR": "Texto quando requerido",
+      "displayName_en_US": "Text when required",
+      "type": "text",
+      "mandatory": false,
+      "order": 6
+    },
+    {
+      "name": "placeholder",
+      "displayName_pt_BR": "Sugestão",
+      "displayName_en_US": "Placeholder",
+      "selector": "textarea",
+      "type": "text",
+      "order": 2
+    },
+    {
+      "name": "ng-disabled",
+      "selector": "textarea",
+      "displayName_en_US": "Disabled",
+      "displayName_pt_BR": "Desabilitado",
+      "type": "logic",
+      "order": 8
+    },
+    {
+      "name": "ng-init",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-click",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-keydown",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-keyup",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-focus",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-blur",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-copy",
+      "selector": "textarea",
+      "type": "event"
+    },
+    {
+      "name": "ng-paste",
+      "selector": "textarea",
+      "type": "event"
+    }
+  ],
+  "styles": [
+    {
+      "selector": "div#{id} label",
+      "text_pt_BR": "Título",
+      "text_en_US": "Title"
+    },
+    {
+      "selector": "div#{id} textarea.form-control",
+      "text_pt_BR": "Área de Texto Geral",
+      "text_en_US": "Text Area General"
+    },
+    {
+      "selector": "div#{id} textarea.form-control::placeholder",
+      "text_pt_BR": "Sugestão",
+      "text_en_US": "Placeholder"
+    }
+  ],
+  "attributesForPreview": [
+    {
+      "name": "resize",
+      "type": "options",
+      "target": "style",
+      "values": [
+        {
+          "key": "resize:none;",
+          "value_pt_BR": "Nenhum",
+          "value_en_US": "None"
+        },
+        {
+          "key": "resize:horizontal;",
+          "value": "Horizontal"
+        },
+        {
+          "key": "resize:vertical;",
+          "value": "Vertical"
+        },
+        {
+          "key": "resize:both;",
+          "value_pt_BR": "Ambos",
+          "value_en_US": "Both"
+        }
+      ]
+    }
+  ]
+}

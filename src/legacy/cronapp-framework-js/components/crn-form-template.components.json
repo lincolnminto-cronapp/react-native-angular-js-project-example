@@ -1,0 +1,14 @@
+{
+  "name": "crn-form",
+  "text_pt_BR": "Formulário",
+  "text_en_US": "Form",
+  "order": 2,
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-form.svg",
+  "description": "Estrutura completa para criar/atualizar/deletar cadastros de dados",
+  "description_en_US": "Complete structure for creating/updating/deleting data entries",
+  "category": [
+    "COMBOS"
+  ],
+  "designTimeSelector": "form",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/form.template.html"
+}

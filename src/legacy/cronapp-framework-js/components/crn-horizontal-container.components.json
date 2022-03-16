@@ -1,0 +1,42 @@
+{
+    "name": "crn-horizontal-container",
+    "text_pt_BR": "Layout horizontal",
+    "text_en_US": "Horizontal Layout",
+    "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-vertical-container.svg",
+    "description": "Dois recipiente ao lado para inserir componentes",
+    "description_en_US": "Two container on the side for inserting components",
+    "category": [
+        "LAYOUTS"
+    ],
+    "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/grid-horizontal.template.html",
+    "properties": {
+        "class": {
+            "order": 9999
+        },
+        "ng-init": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-click": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-dblclick": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-mouseenter": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-mouseleave": {
+            "removable": true,
+            "type": "event"
+        },
+        "ng-mousemove": {
+            "removable": true,
+            "type": "event"
+        }
+    }
+
+}

@@ -1,0 +1,20 @@
+{
+    "name": "crn-list-item",
+    "text_pt_BR": "Item da lista",
+    "text_en_US": "list item",
+    "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-list.svg",
+    "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/crn-list-item.template.html",
+    "wrapper": true,
+    "pallete": false,
+    "properties": {
+        "class": {
+            "order": 9999
+        },
+        "id": {
+            "order": 2
+        }
+    },
+    "styles": [],
+    "attributesForPreview": [],
+    "childrenProperties": []
+}

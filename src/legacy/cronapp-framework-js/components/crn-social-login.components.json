@@ -1,0 +1,13 @@
+{
+  "name": "crn-social-login",
+  "text_pt_BR": "Login Social",
+  "text_en_US": "Social Login",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-social-login.svg",
+  "description": "Estrutura completa para autenticação pelas redes sociais",
+  "description_en_US": "Complete structure for authentication through social media",
+  "category": [
+    "BUTTONS"
+  ],
+  "wrapper": false,
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/social-button-bar.template.html"
+}

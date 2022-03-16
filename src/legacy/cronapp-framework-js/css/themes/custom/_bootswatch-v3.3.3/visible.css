@@ -1,0 +1,261 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: none;
+}
+
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .visible-xs {
+        display: block;
+    }
+    table.visible-xs {
+        display: table;
+    }
+    tr.visible-xs {
+        display: table-row;
+    }
+    th.visible-xs,
+    td.visible-xs {
+        display: table-cell;
+    }
+}
+
+@media (max-width: 767px) {
+    .visible-xs-block {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .visible-xs-inline {
+        display: inline;
+    }
+}
+
+@media (max-width: 767px) {
+    .visible-xs-inline-block {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm {
+        display: block;
+    }
+    table.visible-sm {
+        display: table;
+    }
+    tr.visible-sm {
+        display: table-row;
+    }
+    th.visible-sm,
+    td.visible-sm {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm-block {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm-inline {
+        display: inline;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm-inline-block {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md {
+        display: block;
+    }
+    table.visible-md {
+        display: table;
+    }
+    tr.visible-md {
+        display: table-row;
+    }
+    th.visible-md,
+    td.visible-md {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md-block {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md-inline {
+        display: inline;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md-inline-block {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .visible-lg {
+        display: block;
+    }
+    table.visible-lg {
+        display: table;
+    }
+    tr.visible-lg {
+        display: table-row;
+    }
+    th.visible-lg,
+    td.visible-lg {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 1200px) {
+    .visible-lg-block {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .visible-lg-inline {
+        display: inline;
+    }
+}
+
+@media (min-width: 1200px) {
+    .visible-lg-inline-block {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none;
+    }
+}
+
+.visible-print {
+    display: none;
+}
+
+@media print {
+    .visible-print {
+        display: block;
+    }
+    table.visible-print {
+        display: table;
+    }
+    tr.visible-print {
+        display: table-row;
+    }
+    th.visible-print,
+    td.visible-print {
+        display: table-cell;
+    }
+}
+
+.visible-print-block {
+    display: none;
+}
+
+@media print {
+    .visible-print-block {
+        display: block;
+    }
+}
+
+.visible-print-inline {
+    display: none;
+}
+
+@media print {
+    .visible-print-inline {
+        display: inline;
+    }
+}
+
+.visible-print-inline-block {
+    display: none;
+}
+
+@media print {
+    .visible-print-inline-block {
+        display: inline-block;
+    }
+}
+
+@media print {
+    .hidden-print {
+        display: none;
+    }
+}

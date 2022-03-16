@@ -1,0 +1,37 @@
+#modalBodyConfirmDialog {
+    text-align: center;
+}
+
+#modalBodyConfirmDialog .subtitle,
+#modalBodyConfirmDialog .title {
+    color: #606060;
+    line-height: 1;
+    white-space: pre-wrap
+}
+
+#modalBodyConfirmDialog .icon {
+    margin: 0px;
+}
+
+#modalBodyConfirmDialog .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#modalBodyConfirmDialog .subtitle {
+    margin: 10px 0px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.k-dialog .k-dialog-buttongroup.k-dialog-button-layout-normal{
+    border: none;
+    padding-top: 0;
+    justify-content: center;
+}
+
+.k-dialog .k-dialog-buttongroup.k-dialog-button-layout-normal .k-button.k-primary{
+    color: #fff;
+    background-color: #3b448e !important;
+    border-color: #3b448e !important;
+}

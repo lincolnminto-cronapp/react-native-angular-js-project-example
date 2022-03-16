@@ -1,0 +1,100 @@
+{
+  "name": "crn-grid",
+  "text_pt_BR": "Tabela",
+  "text_en_US": "Table",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-grid-table.svg",
+  "description": "Tabela estilizada com cabeçalho e rodapé",
+  "description_en_US": "Stylized table with header and footer",
+  "category": [
+    "GRIDS"
+  ],
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/grid.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "styles": [
+    {
+      "selector": "div#{id} th",
+      "text_pt_BR": "Cabeçalho da tabela",
+      "text_en_US": "Table header"
+    },
+    {
+      "selector": "div#{id} .k-grid tr:nth-child(2n+1)",
+      "text_pt_BR": "Linha ímpar",
+      "text_en_US": "Ood line"
+    },
+    {
+      "selector": "div#{id} .k-grid tr:nth-child(2n)",
+      "text_pt_BR": "Linha par",
+      "text_en_US": "Even line"
+    },
+    {
+      "selector": "div#{id} .k-grid tr:hover",
+      "text_pt_BR": "Linha Hover",
+      "text_en_US": "Hover Line"
+    }
+  ],
+  "childrenProperties": [
+    {
+      "name": "crn-datasource",
+      "selector": "div[crn-datasource]",
+      "displayName_pt_BR": "Fonte de dados",
+      "displayName_en_US": "Datasource",
+      "type": "pageDatasource"
+    },
+    {
+      "name": "ng-init",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-click",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    }
+  ],
+  "handleRules": {
+    "canOrder": true,
+    "canActivate": true,
+    "canIncrement": true,
+    "rules": [
+      {
+        "activeSelector": ".table-header th.active",
+        "activeClass": "active",
+        "sourceHTML": "<th class=\"k-header\" data-container=\"true\" rowspan=\"\" colspan=\"\"><div data-container=\"true\" data-replace=\"true\">New Title</div></th>",
+        "targetSelector": ".table-header"
+      },
+      {
+        "activeSelector": ".table-content td.active",
+        "activeClass": "active",
+        "sourceHTML": "<td class=\"\" data-container=\"true\" data-component=\"crn-cell\" rowspan=\"\" colspan=\"\"><div class=\"\" data-component=\"crn-horizontal-container\" data-container=\"true\" data-replace=\"true\">New Content</div></td>",
+        "targetSelector": ".table-content"
+      }
+    ]
+  }
+}

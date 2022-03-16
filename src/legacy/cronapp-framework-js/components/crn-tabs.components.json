@@ -1,0 +1,88 @@
+{
+  "name": "crn-tabs",
+  "text_pt_BR": "Abas",
+  "text_en_US": "Tabs",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-tabs.svg",
+  "description": "Diferentes painéis separados por abas",
+  "description_en_US": "Different panels separated by tabs",
+  "category": [
+    "LAYOUTS"
+  ],
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/tabs.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "handleRules": {
+    "canOrder": true,
+    "canActivate": true,
+    "canIncrement": true,
+    "rules": [
+      {
+        "activeSelector": "ul.nav-tabs li.active",
+        "activeClass": "active",
+        "sourceHTML": "<li role=\"presentation\"><a data-target=\"#tab${RANDOM}\" role=\"tab\" data-toggle=\"tab\" data-container=\"true\">New Tab</a></li>",
+        "targetSelector": "ul.nav-tabs"
+      },
+      {
+        "activeSelector": "div.tab-content .tab-pane.active",
+        "activeClass": "active",
+        "sourceHTML": "<div role=\"tabpanel\" class=\"tab-pane\" id=\"tab${RANDOM}\"><div class=\"\" data-container=\"true\"></div>",
+        "targetSelector": "div.tab-content"
+      }
+    ]
+  },
+  "childrenProperties": [
+    {
+      "name": "ng-init",
+      "selector": "a",
+      "type": "event"
+    },
+    {
+      "name": "ng-click",
+      "selector": "a",
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "a",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "a",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "a",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "a",
+      "type": "event"
+    }
+  ],
+  "styles": [
+    {
+      "selector": "div#{id} .nav-tabs",
+      "text_pt_BR": "Fundo da abas",
+      "text_en_US": "Tab background"
+    },
+    {
+      "selector": "div#{id} .nav-tabs li.active a",
+      "text_pt_BR": "Aba Ativa",
+      "text_en_US": "Active Tab"
+    },
+    {
+      "selector": "div#{id} .nav-tabs li a",
+      "text_pt_BR": "Aba Padrão",
+      "text_en_US": "Default Tab"
+    }
+  ]
+}

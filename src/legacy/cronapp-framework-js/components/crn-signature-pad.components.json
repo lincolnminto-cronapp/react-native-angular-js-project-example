@@ -1,0 +1,36 @@
+{
+  "name": "crn-signature-pad",
+  "text_pt_BR": "Painel de assinatura",
+  "text_en_US": "Signature Pad",
+  "order": 2,
+  "wrapper": true,
+  "autoWrapper": true,
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-signature-pad.svg",
+  "description": "Painel de assinatura",
+  "description_en_US": "Signature Pad",
+  "category": [
+      "INPUTS"
+  ],
+  "designTimeSelector": "signature-pad",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/crn-signature-pad.template.html",
+  "designTimeDynamic": false,
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/crn-signature-pad.designtime.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "childrenProperties": [
+   
+    {
+      "name": "ng-model",
+      "selector": "signature-pad",
+      "type": "text",
+      "order": 2,
+      "mandatory": true
+    }
+  ] 
+}

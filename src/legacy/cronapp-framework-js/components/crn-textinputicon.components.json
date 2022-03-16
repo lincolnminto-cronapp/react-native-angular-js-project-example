@@ -1,0 +1,169 @@
+{
+  "name": "crn-textinputicon",
+  "text_pt_BR": "Entrada de texto com ícone",
+  "text_en_US": "Input with icon",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-textinputicon.svg",
+  "description": "Campo para inserir texto com ícone",
+  "description_en_US": "Field to enter text with icon",
+  "category": [
+    "INPUTS", "FORMS"
+  ],
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/textinputicon.template.html",
+  "forcedGroupd": true,
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "styles": [
+    {
+      "selector": "div#{id} label",
+      "text_pt_BR": "Título",
+      "text_en_US": "Title"
+    },
+    {
+      "selector": "div#{id} .input-group .k-textbox",
+      "text_pt_BR": "Entrada de texto",
+      "text_en_US": "Input"
+    },
+    {      
+      "selector": "div#{id} input::placeholder",
+      "text_pt_BR": "Sugestão",
+      "text_en_US": "Placeholder"
+    },
+    {
+      "selector": "div#{id} span",
+      "text_pt_BR": "Ícone",
+      "text_en_US": "Icon"
+    }
+  ],
+  "childrenProperties": [
+    {
+      "name": "class",
+      "selector": "i",
+      "displayName_pt_BR": "Ícone",
+      "displayName_en_US": "Icon",
+      "type": "icon"
+    },
+    {
+      "name": "content",
+      "selector": "label",
+      "displayName_pt_BR": "Título",
+      "displayName_en_US": "Title",
+      "type": "text",
+      "order": 1
+    },
+    {
+      "name": "ng-model",
+      "selector": "input",
+      "type": "text",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "mandatory": true
+    },
+    {
+      "name": "type",
+      "selector": "input",
+      "type": "type",
+      "order": 2
+    },
+    {
+      "name": "mask",
+      "selector": "input",
+      "type": "mask",
+      "order": 3
+    },
+    {
+      "name": "ng-disabled",
+      "selector": "input",
+      "displayName_en_US": "Disabled",
+      "displayName_pt_BR": "Desabilitado",
+      "type": "logic",
+      "order": 4
+    },
+    {
+      "name": "ng-required",
+      "selector": "input",
+      "type": "logic"
+    },
+    {
+      "name": "placeholder",
+      "displayName_pt_BR": "Sugestão",
+      "displayName_en_US": "Placeholder",
+      "selector": "input",
+      "type": "text",
+      "order": 4
+    },
+    {
+      "name": "ng-init",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-change",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-click",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-keydown",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-keyup",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-focus",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-blur",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-copy",
+      "selector": "input",
+      "type": "event"
+    },
+    {
+      "name": "ng-paste",
+      "selector": "input",
+      "type": "event"
+    }
+  ],
+  "type": {
+    "displayName": "Type"
+  }
+}

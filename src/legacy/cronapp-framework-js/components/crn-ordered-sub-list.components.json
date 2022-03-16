@@ -1,0 +1,92 @@
+{
+    "name": "crn-ordered-sub-list",
+    "text_pt_BR": "Sub lista ordenada",
+    "text_en_US": "Ordered sub list",
+    "wrapper": true,
+    "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-ordered-sub-list.svg",
+    "description": "Sublista de segundo grau com indicadores numerados",
+    "description_en_US": "Second degree sublist with numbered indicators",
+    "pallete": false,
+    "category": [
+        "LISTS"
+    ],
+    "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/crn-ordered-sub-list.template.html",
+    "properties": {
+        "class": {
+            "order": 9999
+        },
+        "id": {
+            "order": 2
+        },
+        "type": {
+            "displayName_pt_BR": "Valor do atributo",
+            "displayName_en_US": "Attribute value"
+        }
+    },
+    "forcedGroup": true,
+    "handleRules": {
+        "canOrder": true,
+        "canActivate": true,
+        "canIncrement": true,
+        "rules": [
+            {
+                "activeSelector": "ol.sub-list li.active.sub-list",
+                "activeClass": "active",
+                "sourceHTML": "<li class=\"item-sub-list\" data-component=\"crn-list-item\" data-replace=\"true\">Item</li>",
+                "targetSelector": "ol.sub-list"
+            }
+        ]
+    },
+    "attributesForPreview": [
+        {
+            "name": "type",
+            "type": "options",
+            "target": "type",
+            "values": [
+                {
+                    "key": "1",
+                    "value_pt_BR": "Numeração (1,2,3..)",
+                    "value_en_US": "Numbering (1,2,3..)"
+                },
+                {
+                    "key": "a",
+                    "value_pt_BR": "Letra minúscula (a, b, c..)",
+                    "value_en_US": "Lower case (a, b, c..)"
+                },
+                {
+                    "key": "A",
+                    "value_pt_BR": "Letra maiúscula (A, B, C..)",
+                    "value_en_US": "Capital letter (A, B, C..)"
+                },
+                {
+                    "key": "I",
+                    "value_pt_BR": "Números romanos (I, II, III..)",
+                    "value_en_US": "Roman numbers"
+                },
+                {
+                    "key": "i",
+                    "value_pt_BR": "Números romanos minúsculo (i, ii, iii..)",
+                    "value_en_US": "Lowercase roman numbers (i, ii, iii..)"
+                }
+            ]
+        }
+    ],
+    "childrenProperties": [
+        {
+            "name": "type",
+            "selector": "ol.sub-list"
+        }
+    ],
+    "styles": [
+        {
+            "selector": "div#{id} ol.sub-list",
+            "text_pt_BR": "Plano de fundo",
+            "text_en_US": "Background"
+        },
+        {
+            "selector": "div#{id} ol.sub-list li",
+            "text_pt_BR": "Item da lista",
+            "text_en_US": "List item"
+        }
+    ]
+}

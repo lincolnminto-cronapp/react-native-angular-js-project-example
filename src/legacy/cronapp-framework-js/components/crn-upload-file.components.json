@@ -1,0 +1,103 @@
+{
+  "name": "crn-upload-file",
+  "text_pt_BR": "Botão de envio de arquivo",
+  "text_en_US": "File Upload Button",
+  "wrapper": false,
+  "pallete": false,
+  "class": "adjust-icon mdi mdi-cloud-upload",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/fileupload-button.template.html",
+  "properties": {
+    "ng-model": {
+      "displayName": "Field",
+      "order": 1,
+      "mandatory": true
+    },
+    "ng-init": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-click": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-dblclick": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseenter": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseleave": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mousemove": {
+      "removable": true,
+      "type": "event"
+    },
+    "xattr-theme": {
+      "displayName_pt_BR": "Tema",
+      "displayName_en_US": "Theme",
+      "order": 2
+    },
+    "class": {
+      "order": 9999
+    }
+  },
+  "attributesForPreview": [
+    {
+      "name": "xattr-theme",
+      "type": "options",
+      "target": "class",
+      "values": [
+        {
+          "key": "btn-default",
+          "value_pt_BR": "Padrão",
+          "value_en_US": "Default"
+        },
+        {
+          "key": "btn-primary",
+          "value_pt_BR": "Secundário",
+          "value_en_US": "Secondary"
+        },
+        {
+          "key": "btn-success",
+          "value_pt_BR": "Sucesso",
+          "value_en_US": "Success"
+        },
+        {
+          "key": "btn-info",
+          "value_pt_BR": "Informação",
+          "value_en_US": "Info"
+        },
+        {
+          "key": "btn-warning",
+          "value_pt_BR": "Aviso",
+          "value_en_US": "Warning"
+        },
+        {
+          "key": "btn-danger",
+          "value_pt_BR": "Perigo",
+          "value_en_US": "Danger"
+        }
+      ]
+    }
+  ],
+  "childrenProperties": [
+    {
+      "name": "class",
+      "selector": "i",
+      "displayName_pt_BR": "Ícone",
+      "displayName_en_US": "Icon",
+      "type": "icon"
+    },
+    {
+      "name": "content",
+      "displayName_pt_BR": "Título",
+      "displayName_en_US": "Title",
+      "selector": "span",
+      "type": "content"
+    }
+  ]
+}

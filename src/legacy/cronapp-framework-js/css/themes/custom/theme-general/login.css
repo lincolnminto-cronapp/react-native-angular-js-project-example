@@ -1,0 +1,48 @@
+.siginPanel {
+    background-color: var(--colorLight40);
+}
+
+.login-view {
+    flex-direction: column-reverse;
+    background-color: var(--colorNeutral00);
+    border-radius: 3px;
+    padding: var(--distanceSmall);
+    margin-top: 20px;
+}
+
+.login-view .reset-password {
+    text-align: right;
+}
+
+.login-view .sign-up {
+    text-align: center;
+    padding: 0;
+    margin-top: var(--distanceSmallest);
+}
+
+.login-view .modalPassword,
+#modalPassword .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.crn-button-signup-register {
+    padding-left: 41px;
+    padding-right: 41px;
+}
+
+.crn-anchor-signup-back {
+    color: rgb(112, 112, 112);
+    margin-top: 10px;
+}
+
+#buttonSave { 
+    padding-right: 0px;
+    float: right;
+}
+
+#buttonClose { 
+    padding-right: 0px;
+    float: right;
+}

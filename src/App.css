@@ -1,5 +1,5 @@
-.wrapper {
-  background-color: #fff;
+/* .wrapper {
+  background-color: rgb(255, 255, 255);
   padding: 30px;
   flex: 1;
   flex-direction: column;
@@ -7,7 +7,40 @@
   margin-right: auto;
   border-width: 1px;
   border-style: solid;
-  border-color: #ccc;
+  border-color: rgb(0, 0, 0);
   max-width: 460px;
   min-height: 600px;
+} */
+div {
+  /* color: rgb(43, 226, 83); */
 }
+
+p {
+  color: chocolate;
+}
+
+thiago-lindo {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 10px;
+  color: rgb(255, 0, 212);
+}
+
+.my-class {
+  color: rgb(0, 39, 73);
+}
+
+.my-class2 {
+  color: rgb(197, 177, 0);
+}
+
+.heart {
+  width: 50px;
+}
+
+.thiago {
+  text-align: center;
+}
+
+/* @import '/src/legacy/cronapp-framework-mobile-js/lib/ionic/css/ionic.css'; */
+/* @import '/node_modules/@ionic/react/css/padding.css'; */

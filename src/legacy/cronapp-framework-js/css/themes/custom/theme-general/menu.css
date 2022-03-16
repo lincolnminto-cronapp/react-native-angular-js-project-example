@@ -1,0 +1,23 @@
+.navbar {
+    background-color: var(--colorDefault10, #d9d9d9);
+    border-bottom: 1px solid var(--colorDefault30, #474949);
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+.navbar-nav>li>a,
+.navbar-nav>li>a:hover {
+    padding-top: 17px;
+    padding-bottom: 13px;
+    transition: color ease-in-out 0.2s;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    transition: color ease-in-out 0.2s;
+}
+
+.navbar .caret,
+.navbar .caret:hover {
+    transition: border-color ease-in-out 0.2s;
+}

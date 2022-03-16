@@ -1,0 +1,49 @@
+.navbar {
+    background-image: none;
+    background-color: var(--colorDefault40, #375a7f);
+    border-bottom: none;
+}
+
+.navbar-inverse {
+    background-image: none;
+    background-color: var(--colorSuccess40, #3498db);
+    border: none
+}
+
+.navbar-inverse .badge {
+    background-color: #fff;
+    color: var(--colorSuccess40, #3498db);
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li a,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li a {
+    color: var(--colorDefault30, #878785);
+    font-size: var(--textNormalSize, 14px);
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li .dropdown-menu li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li .dropdown-menu li a:hover,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: var(--textColorDefault40, #ffffff);
+    background-color: transparent;
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li .dropdown-menu li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li .dropdown-menu li a:hover{
+    color: var(--textColorDefault40, #ffffff);
+    background-color: var(--colorDefault40, #3e3f3a);;
+}
+
+.dropdown-menu {
+    color: var(--textColor30, #3e3f3a);
+    background-color: var(--backgroundColor40, #ffffff);
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li .dropdown-menu a,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li .dropdown-menu a {
+    color: var(--textColor30, #3e3f3a);
+}

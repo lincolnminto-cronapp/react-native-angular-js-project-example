@@ -1,0 +1,85 @@
+{
+  "name": "crn-simple-text",
+  "text_pt_BR": "Texto Simples",
+  "text_en_US": "Plain text",
+  "wrapper": false,
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-simple-text.svg",
+  "description": "Texto sem formatação",
+  "description_en_US": "Text without formatting",
+  "category": [
+    "TEXTS", "LAYOUTS"
+  ],
+  "order": 10,
+  "template": "<p>Text</p>",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    },
+    "ng-click": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-dblclick": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseenter": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseleave": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mousemove": {
+      "removable": true,
+      "type": "event"
+    },
+    "xattr-position": {
+      "displayName_pt_BR": "Posição do texto",
+      "displayName_en_US": "Text position"
+    }
+  },
+  "attributesForPreview": [
+    {
+      "name": "xattr-position",
+      "type": "btngroup",
+      "target": "class",
+      "values": [
+        {
+          "key": "text-left",
+          "value_pt_BR": "Esquerda",
+          "value_en_US": "Left",
+          "icon": "mdi mdi-format-align-left"
+        },
+        {
+          "key": "text-center",
+          "value_pt_BR": "Centralizado",
+          "value_en_US": "centered text",
+          "icon": "mdi mdi-format-align-center "
+        },
+        {
+          "key": "text-right",
+          "value_pt_BR": "Direita",
+          "value_en_US": "Right",
+          "icon": "mdi mdi-format-align-right"
+        },
+        {
+          "key": "text-justify",
+          "value_pt_BR": "Justificado",
+          "value_en_US": "Justify",
+          "icon": "mdi mdi-format-align-justify"
+        },
+        {
+          "key": "none-block",
+          "value_pt_BR": "Nenhum",
+          "value_en_US": "None",
+          "icon": "mdi mdi-delete"
+        }
+      ]
+    }
+  ]
+}

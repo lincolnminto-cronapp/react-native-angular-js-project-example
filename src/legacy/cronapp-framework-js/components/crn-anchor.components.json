@@ -1,0 +1,98 @@
+{
+  "name": "crn-anchor",
+  "text_pt_BR": "Link",
+  "text_en_US": "Link",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-anchor.svg",
+  "description": "Texto com vínculo a uma URL",
+  "description_en_US": "Text linked to a URL",
+  "category": [
+    "BUTTONS"
+  ],
+  "wrapper": false,
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/anchor.template.html",
+  "properties": {
+    "target": {
+      "displayName_pt_BR": "Onde abrir",
+      "displayName_en_US": "Where to open",
+      "removable": false,
+      "type": "list",
+      "options": [
+        {
+          "key": "_blank",
+          "value_pt_BR": "Nova janela",
+          "value_en_US": "New window"
+        },
+        {
+          "key": "_self",
+          "value_pt_BR": "Mesma janela",
+          "value_en_US": "Same window"
+        },
+        {
+          "key": "_parent",
+          "value_pt_BR": "Janela pai",
+          "value_en_US": "Parent window"
+        },
+        {
+          "key": "_top",
+          "value_pt_BR": "Topo",
+          "value_en_US": "Top"
+        }
+      ],
+      "order": 2
+    },
+    "href": {
+      "removable": false,
+      "type": "projectResource",
+      "resourceType": "text/html",
+      "extraOptions": {
+        "underViewsFolder": true
+      },
+      "order": 3
+    },
+    "content": {
+      "displayName_pt_BR": "Título",
+      "displayName_en_US": "Title",
+      "order": 1
+    },
+    "class": {
+      "order": 9999
+    },
+    "ng-init": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-click": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-dblclick": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseenter": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseleave": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mousemove": {
+      "removable": true,
+      "type": "event"
+    },
+    "id": {
+      "order": 4
+    },
+    "data-replace": {
+      "order": 3
+    }
+  },
+  "styles": [
+    {
+      "selector": "a#{id}",
+      "text_pt_BR": "Link",
+      "text_en_US": "Link"
+    }
+  ]
+}

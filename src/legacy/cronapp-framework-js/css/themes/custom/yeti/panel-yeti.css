@@ -1,0 +1,96 @@
+.panel {
+    background-color: var(--backgroundColor40, #ffffff);
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.panel-heading,
+.panel-footer {
+    border-radius: 0;
+}
+
+/* Default */
+.panel-default .panel-heading,
+.panel-default .panel-footer {
+    color: var(--textColor40, #222222);
+    background-color: var(--colorDefault40, #e7e7e7);
+    border-color: var(--colorDefault50, #cacaca);
+}
+
+.panel-default {
+    border-color: var(--colorDefault50, #cacaca);
+}
+
+/* Primary */
+
+.panel-primary>.panel-heading,
+.panel-primary>.panel-footer {
+    color: var(--textColorPrimary40, #ffffff);
+    background-color: var(--colorPrimary40, #008cba);
+    border-color: var(--colorPrimary50, #007ba3);
+}
+
+.panel-primary {
+    border-color: var(--colorPrimary50, #007ba3);
+}
+
+/* Sucess */
+
+.panel-success>.panel-heading,
+.panel-success>.panel-footer {
+    color: var(--textColorSuccess40, #ffffff);
+    background-color: var(--colorSuccess40, #43ac6a);
+    border-color: var(--colorSuccess50, #3b975d);
+}
+
+.panel-success {
+    border-color: var(--colorSuccess50, #3b975d);
+}
+
+/* Info */
+.panel-info>.panel-heading,
+.panel-info>.panel-footer {
+    color: var(--textColorCalm40, #ffffff);
+    background-color: var(--colorCalm40, #5bc0de);
+    border-color: var(--colorCalm50, #50a8c2);
+}
+
+.panel-info {
+    border-color: var(--colorCalm50, #50a8c2);
+}
+
+/* Warning */
+.panel-warning>.panel-heading,
+.panel-warning>.panel-footer {
+    color: var(--textColorWarning40, #ffffff);
+    background-color: var(--colorWarning40, #e99002);
+    border-color: var(--colorWarning50, #cc7e02);
+}
+
+.panel-warning {
+    border-color: var(--colorWarning50, #cc7e02);
+}
+
+/* Danger */
+.panel-danger>.panel-heading,
+.panel-danger>.panel-footer {
+    color: var(--textColorDanger40, #ffffff);
+    background-color: var(--colorDanger40, #f04124);
+    border-color: var(--colorDanger50, #d23920);
+}
+
+.panel-danger {
+    border-color: var(--colorDanger50, #d23920);
+}
+
+/* Light */
+.panel-light>.panel-heading,
+.panel-light>.panel-footer {
+    color: var(--textColor40, #222222);
+    background-color: var(--colorLight40, #eeeeee);
+    border-color: var(--colorLight50, #d0d0d0);
+}
+
+.panel-light {
+    border-color: var(--colorLight50, #d0d0d0);
+}

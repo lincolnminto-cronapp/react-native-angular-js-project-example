@@ -1,0 +1,68 @@
+{
+  "name": "crn-frame",
+  "text_pt_BR": "Frame",
+  "text_en_US": "Frame",
+  "description": "Componente visual que pode ser utilizado dentro de uma página",
+  "description_en_US": "Visual component that can be used within a page",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-frame.svg",
+  "forcedGroup": true,
+  "category": [
+    "LAYOUTS"
+  ],
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-frame.designtime.html",
+  "designTimeSelector": "cron-frame",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-frame.template.html",
+  "properties": {
+    "type": {
+        "removable": false,
+        "displayName_pt_BR": "Tipo",
+        "displayName_en_US": "Type",
+        "selector": "cron-frame[type]",
+        "childrenProperty": true,
+        "type": "list",
+        "options": [
+            {
+              "key": "include",
+              "value_pt_BR": "Inclusão",
+              "value_en_US": "Include"
+            },
+            {
+              "key": "frame",
+              "value_pt_BR": "Frame",
+              "value_en_US": "Frame"
+            }
+        ]
+    },
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 3
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "origin",
+      "type": "projectResource",
+      "displayName_pt_BR": "Origem",
+      "displayName_en_US": "Origin",
+      "resourceType": "text/html",
+      "selector": "cron-frame[origin]",
+      "mandatory": true,
+      "removable": false,
+      "underViewsFolder" : true,
+      "webPath" : true,
+      "order": 1
+    },
+    {
+      "name": "ng-model",
+      "selector": "cron-frame",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "type": "text",
+      "order": 2,
+      "mandatory": true
+    }
+  ],
+  "styles": []
+}

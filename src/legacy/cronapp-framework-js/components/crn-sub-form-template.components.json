@@ -1,0 +1,14 @@
+{
+  "name": "crn-sub-form",
+  "text_pt_BR": "Sub Formulário",
+  "text_en_US": "SubForm",
+  "order": 2,
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-sub-form.svg",
+  "description": "Estrutura completa para criar/atualizar/deletar cadastros de dados",
+  "description_en_US": "Complete structure for creating/updating/deleting data entries",
+  "category": [
+    "LAYOUTS", "FORMS"
+  ],
+  "designTimeSelector": "div[data-component='crn-sub-form']",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/sub-form.template.html"
+}

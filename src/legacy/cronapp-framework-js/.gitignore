@@ -1,0 +1,9 @@
+/node_modules/**
+/bower_components/**
+.project
+package-lock.json
+/node_modules
+/.history
+/pom.xml
+/.idea/**
+/nbproject

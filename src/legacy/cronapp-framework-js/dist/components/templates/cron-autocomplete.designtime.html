@@ -1,0 +1,26 @@
+<div class="form-group" id="{{attrs.id}}-designtime"><label for="cron-${COMPONENTID}">Label</label><span style="display: none" id="cron-autocomplete-designtime" data-attrs="{{attrs}}"><script>let $documentDesignTime = $(document.getElementsByTagName('iframe')[0].contentWindow.document);
+            let wait = setInterval(()=> {
+
+                let $element = $documentDesignTime.find('[id=cron-autocomplete-designtime]')
+                if ($element.length) {
+                    clearInterval(wait);
+
+                    $element.each((idx, c) => {
+
+                        let $current = $(c);
+                        let attrs = $current.data('attrs');
+                        let $label = $documentDesignTime.find(`#${attrs.id}`).find('label');
+                        let $labelDesignTime = $documentDesignTime.find(`#${attrs.id}-designtime`).find('label');
+                        if (!$label.data('synchronize-started')) {
+                            $label.data('synchronize-started', true);
+                            let synchronize = setInterval(() => {
+                                if ($label.html() !== $labelDesignTime.html()) {
+                                    $labelDesignTime.html($label.html());
+                                }
+                            }, 500);
+
+                        }
+
+                    });
+                }
+            });</script></span><span class="k-widget k-autocomplete cronAutoComplete" style="width: 100%"><input class="cronAutoComplete k-input" type="text"></span></div>

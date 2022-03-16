@@ -1,0 +1,75 @@
+.btn {
+    border-radius: 0;
+    border: 1px solid;
+}
+
+.btn.btn-link i,
+.btn.btn-link span,
+.btn.btn-link:focus,
+.btn.btn-link:hover,
+.btn.btn-link.disabled,
+.btn.btn-link[disabled]:hover,
+div#view-canvas .btn.btn-link.disabled {
+    color: var(--colorSuccess40, #93c54b);
+}
+
+/* Default */
+.btn.btn-default {
+    border-color: var(--colorDefault50, #cacaca);
+}
+
+/* Primary */
+.btn.btn-primary {
+    border-color: var(--colorPrimary50, #007ba3);
+}
+
+/* Success */
+.btn.btn-success {
+    border-color: var(--colorSuccess50, #3b975d);
+}
+
+/* Warning */
+.btn.btn-warning {
+    border-color: var(--colorWarning50, #cc7e02);
+}
+
+/* Danger */
+.btn.btn-danger {
+    border-color: var(--colorDanger50, #d23920);
+}
+
+/* Info */
+.btn.btn-info {
+    border-color: var(--colorCalm50, #50a8c2);
+}
+
+/* Light */
+.btn.btn-light {
+    border-color: var(--colorLight50, #d0d0d0);
+}
+
+
+/* Link */
+.btn.btn-link,
+div#view-canvas .btn.btn-link {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+.btn.btn-link i,
+.btn.btn-link span {
+    color: var(--colorCalm40, #3399f3);
+}
+
+.btn.btn-link:focus,
+.btn.btn-link:hover {
+    color: var(--colorCalm40, #3399f3);
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.btn.btn-link:focus i,
+.btn.btn-link:hover i {
+    text-decoration: none;
+}

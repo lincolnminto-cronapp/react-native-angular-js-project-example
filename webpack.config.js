@@ -5,7 +5,9 @@ module.exports = {
   entry: ['./polyfills', 'react-hot-loader/patch', './index.web.js'],
   devServer: {
     hot: true,
+    watchContentBase: true,
   },
+  devtool: 'eval-source-map',
   plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -28,11 +30,11 @@ module.exports = {
         },
       },
       {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(jpe?g|gif|png|svg|eot|ttf|woff|html)$/,
         use: {
           loader: 'file-loader',
           options: {
-            name: '[path][name].[hash].[ext]',
+            name: '[path][name].[ext]',
           },
         },
       },
@@ -49,7 +51,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
+              localIdentName: '[local]',
             },
           },
           {
@@ -70,7 +72,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
+              localIdentName: '[local]',
             },
           },
           {
@@ -88,7 +90,7 @@ module.exports = {
     alias: {
       'react-native': 'react-native-web',
     },
-    extensions: ['.web.js', '.js', '.web.jsx', '.jsx'],
+    extensions: ['.web.js', '.js', '.web.jsx', '.jsx', 'json', 'html'],
     mainFields: ['browser', 'main'],
   },
 };

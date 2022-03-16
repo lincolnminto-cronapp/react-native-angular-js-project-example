@@ -1,0 +1,49 @@
+.navbar {
+    background-image: none;
+    background-color: var(--backgroundColor40, #060606);
+    border-bottom: 1px solid var(--colorDefault70, #2f2f2f);
+}
+
+.navbar-inverse {
+    background-image: none;
+    background-color: var(--colorDefault40, #555555);
+    border: none
+}
+
+.navbar-inverse .badge {
+    background-color: #ffffff;
+    color: var(--colorDefault40, #555555);
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li a,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li a {
+    color: var(--textColor40, #ffffff);
+    font-size: var(--textNormalSize, 14px);
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li .dropdown-menu li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li .dropdown-menu li a:hover,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: var(--textColor10, #e2e2e2);
+    background-color: transparent;
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li .dropdown-menu li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li .dropdown-menu li a:hover {
+    color: var(--textColorPrimary40, #ffffff);
+    background-color: var(--colorPrimary40, #555555);
+}
+
+.dropdown-menu {
+    color: var(--textColor30, #ababab);
+    background-color: var(--colorDefault70, #2f2f2f);
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li .dropdown-menu a,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li .dropdown-menu a {
+    color: var(--textColor10, #e2e2e2);
+}

@@ -1,0 +1,32 @@
+.navbar {
+    background-image: linear-gradient(var(--colorLight10, #f2f2f2), var(--colorLight40, #eeeeee) 50%, var(--colorLight40 , #aeaeae));
+    border-bottom: 1px solid var(--colorLight50);
+}
+
+.navbar-inverse {
+    background-image: linear-gradient(var(--colorPrimary10, #f2f2f2), var(--colorPrimary40, #eeeeee) 50%, var(--colorPrimary40 , #aeaeae));
+    border: 1px solid #345578;
+}
+
+.navbar-inverse .badge {
+    background-color: #fff;
+    color: #446e9b;
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li a,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li a {
+    color: var(--textColor40, #666666);
+    font-size: var(--textNormalSize, 14px);
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li a:hover {
+    color: var(--colorCalm40, #3399f3);
+}
+
+#main-nav-bar .navbar-default .container-fluid #navbar .navbar-nav li .dropdown-menu li a:hover,
+#main-nav-bar .navbar-default .container-fluid #navbar2 .navbar-nav li .dropdown-menu li a:hover {
+    color: var(--textColorPrimary40, #ffffff);
+    text-decoration: none;
+    background-color: var(--colorPrimary40, #446e9b);
+}

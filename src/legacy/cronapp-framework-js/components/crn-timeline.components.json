@@ -1,0 +1,44 @@
+{
+  "name": "crn-timeline",
+  "text_pt_BR": "Linha do Tempo",
+  "text_en_US": "Timeline",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-timeline.svg",
+  "description": "Lista de eventos no formato linha do tempo",
+  "description_en_US": "Event list as timeline feed",
+  "onDoubleClick": "openEditor",
+  "onDrop": "openEditor",
+  "category": [
+    "LISTS"
+  ],
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/timeline.template.html",
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/timeline.designtime.html",
+  "designTimeSelector": "cron-timeline",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "wrapper": false,
+  "autoWrapper": false,
+  "templateInitializers": [
+    {
+      "template": "<ul class=\"timeline\">\r\n   <timeline-event side=\"\" class=\"ng-scope\" ng-repeat=\"rowData in datasource\">\r\n      <li class=\"timeline-event {{rowData[options.fields.field4] == '2' ? 'timeline-inverted' : ''}}\">\r\n         <timeline-badge class=\"{{$odd ? 'info' : 'warning'}} bounce-in\">\r\n            <div class=\"timeline-badge\">\r\n               <i class=\"glyphicon {{rowData[options.fields.field3] ? rowData[options.fields.field3] : 'glyphicon-check'}}\"><\/i>\r\n            <\/div>\r\n         <\/timeline-badge>\r\n         <timeline-panel class=\"info bounce-in\">\r\n            <div class=\"timeline-panel\">\r\n               <timeline-heading class=\"ng-scope\">\r\n                  <div class=\"timeline-heading\">\r\n                     <h4 class=\"ng-binding ng-scope\">{{rowData[options.fields.field0]}}<\/h4>\r\n                     <p class=\"ng-scope\">\r\n                        <small class=\"text-muted ng-binding\"><i class=\"glyphicon glyphicon-time\"><\/i>{{rowData[options.fields.field1]|mask:options.fields.mask1:options.fields.type1}}<\/small>\r\n                     <\/p>\r\n                  <\/div>\r\n               <\/timeline-heading>\r\n               <p ng-if=\"rowData[options.fields.field2]\" class=\"ng-binding ng-scope\">{{rowData[options.fields.field2]}}<\/p>\r\n            <\/div>\r\n         <\/timeline-panel>\r\n      <\/li>\r\n   <\/timeline-event>\r\n<\/ul>",
+      "attribute": "advancedTemplate"
+    }
+  ],
+  "childrenProperties": [
+    {
+      "name": "options",
+      "displayName_pt_BR": "Configurações",
+      "displayName_en_US": "Settings",
+      "removable": false,
+      "global": "true",
+      "selector": "cron-timeline",
+      "order": 1,
+      "mandatory": true
+    }
+  ]
+}

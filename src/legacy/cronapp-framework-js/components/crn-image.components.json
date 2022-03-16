@@ -1,0 +1,180 @@
+{
+  "name": "crn-image",
+  "text_pt_BR": "Imagem",
+  "text_en_US": "Image",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-image.svg",
+  "description": "Imagem",
+  "description_en_US": "Image",
+  "category": [
+    "LAYOUTS"
+  ],
+  "wrapper": false,
+  "autoWrapper": true,
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/image.default.template.html",
+  "properties": {
+    "src": {
+      "removable": false,
+      "type": "projectResource",
+      "resourceType": "image/jpeg,image/gif,image/png,image/svg+xml",
+      "mandatory": true,
+      "order": 1
+    },
+    "loading": {
+      "displayName_pt_BR": "Carregamento",
+      "displayName_en_US": "Loading",
+      "removable": true,
+      "type": "list",
+      "options": [
+        {
+          "key": "eager",
+          "value": "Eager"
+        },
+        {
+          "key": "lazy",
+          "value": "Lazy"
+        }
+      ]
+    },
+    "align": {
+      "removable": true,
+      "type": "list",
+      "options": [
+        {
+          "key": "left",
+          "value_pt_BR": "Esquerda",
+          "value_en_US": "Left"
+        },
+        {
+          "key": "right",
+          "value_pt_BR": "Direita",
+          "value_en_US": "Right"
+        },
+        {
+          "key": "middle",
+          "value_pt_BR": "Meio",
+          "value_en_US": "Midle"
+        },
+        {
+          "key": "top",
+          "value_pt_BR": "Topo",
+          "value_en_US": "Top"
+        },
+        {
+          "key": "bottom",
+          "value_pt_BR": "Fundo",
+          "value_en_US": "Bottom"
+        }
+      ]
+    },
+    "ng-init": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-click": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-dblclick": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseenter": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseleave": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mousemove": {
+      "removable": true,
+      "type": "event"
+    },
+    "xattr-position": {
+      "displayName_pt_BR": "Posição da imagem",
+      "displayName_en_US": "Image position",
+      "order": 2
+    },
+    "object-fit": {
+      "displayName_pt_BR": "Preenchimento da imagem",
+      "displayName_en_US": "Image filling",
+      "order": 3
+    },
+    "width": {
+      "displayName_pt_BR": "Largura da imagem",
+      "displayName_en_US": "Image width",
+      "order": 4
+    },
+    "height": {
+      "displayName_pt_BR": "Altura da imagem",
+      "displayName_en_US": "Image height",
+      "order": 5
+    },
+    "alt":{
+      "order": 6
+    },
+    "id": {
+      "order": 7
+    }
+  },
+  "attributesForPreview": [
+    {
+      "name": "object-fit",
+      "target": "style",
+      "type": "options",
+      "values": [
+        {
+          "key": "object-fit: cover;",
+          "value_pt_BR": "Proporcional",
+          "value_en_US": "Proportional"
+        },
+        {
+          "key": "object-fit: contain;",
+          "value_pt_BR": "Ajustado (padrão)",
+          "value_en_US": "Adjusted (default)"
+        },
+        {
+          "key": "object-fit: fill;",
+          "value_pt_BR": "Preencher",
+          "value_en_US": "Fill"
+        },
+        {
+          "key": "object-fit: none;",
+          "value_pt_BR": "Nenhum",
+          "value_en_US": "None"
+        }
+      ]
+    },
+    {
+      "name": "xattr-position",
+      "type": "btngroup",
+      "target": "class",
+      "values": [
+        {
+          "key": "left-block",
+          "value_pt_BR": "Esquerda",
+          "value_en_US": "Left",
+          "icon": "mdi mdi-ray-start"
+        },
+        {
+          "key": "center-block",
+          "value_pt_BR": "Centro",
+          "value_en_US": "Center",
+          "icon": "mdi mdi-ray-vertex"
+        },
+        {
+          "key": "right-block",
+          "value_pt_BR": "Direita",
+          "value_en_US": "Right",
+          "icon": "mdi mdi-ray-end"
+        },
+        {
+          "key": "none-block",
+          "value": "None",
+          "icon": "mdi mdi-delete"
+        }
+      ]
+    }
+  ],
+  "childrenProperties": []
+}

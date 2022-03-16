@@ -1,0 +1,86 @@
+{
+  "name": "crn-dynamic-menu",
+  "onDrop": "openEditor",
+  "onDoubleClick": "openEditor",
+  "text_pt_BR": "Menu Dinâmico",
+  "text_en_US": "Dynamic Menu",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-dynamic-menu.svg",
+  "description": "Estrutura com botões de navegação",
+  "description_en_US": "Structure with navigation buttons",
+  "category": [
+    "LAYOUTS"
+  ],
+  "order": 11,
+  "wrapper": false,
+  "autoWrapper": true,
+  "designTimeDynamic": true,
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-dynamic-menu.designtime.html",
+  "designTimeSelector": "cron-dynamic-menu",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-dynamic-menu.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    },
+    "content": {
+      "displayName_pt_BR": "Valor alternativo",
+      "displayName_en_US": "Alternative value"
+    },
+    "multilevel-action": {
+      "removable": false,
+      "selector": "cron-dynamic-menu",
+      "displayName_pt_BR": "Ação do multinível",
+      "displayName_en_US": "Multilevel action",
+      "childrenProperty": true,
+      "type": "list",
+      "options": [
+        {
+          "key": "hover",
+          "value_pt_BR": "Ao passar o mouse",
+          "value_en_US": "Hover"
+        },
+        {
+          "key": "click",
+          "value_pt_BR": "Clique",
+          "value_en_US": "Click"
+        }
+      ],
+      "order": 2
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "options",
+      "selector": "cron-dynamic-menu",
+      "displayName_pt_BR": "Configuração",
+      "displayName_en_US": "Configuration",
+      "type": "text",
+      "order": 1,
+      "mandatory": true
+    }
+  ],
+  "styles": [
+    {
+      "selector": "#{id} .crn-menu-item a",
+      "text_pt_BR": "Geral",
+      "text_en_US": "General"
+    },
+    {
+      "selector": "#{id} .nav .open a, #{id} .nav .open a:focus, #{id} .nav .open a:hover",
+      "text_pt_BR": "Item aberto",
+      "text_en_US": "Open item"
+    },
+    {
+      "selector": "#{id} .dropdown-menu li a",
+      "text_pt_BR": "Subitem",
+      "text_en_US": "Subitem"
+    },
+    {
+      "selector": "#{id} .crn-menu-item .dropdown-menu",
+      "text_pt_BR": "Plano de fundo do Subitem",
+      "text_en_US": "Subitem Background"
+    }
+  ]
+}

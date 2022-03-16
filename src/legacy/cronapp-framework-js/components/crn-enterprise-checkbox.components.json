@@ -1,0 +1,261 @@
+{
+  "name": "crn-enterprise-checkbox",
+  "text_pt_BR": "Caixa de checagem",
+  "text_en_US": "Checkbox",
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-checkbox.svg",
+  "description": "Caixa de checagem quadrada com texto",
+  "description_en_US": "Square checkbox with text",
+  "category": [
+    "INPUTS", "FORMS"
+  ],
+  "order": 7,
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-checkbox.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    },
+    "checkbox-theme": {
+      "displayName_pt_BR": "Cor da caixa de checagem",
+      "displayName_en_US": "Checkbox color"
+    }
+  },
+  "attributesForPreview": [
+    {
+      "name": "checkbox-theme",
+      "type": "options",
+      "target": "class",
+      "values": [
+        {
+          "key": "checkbox-theme",
+          "value_pt_BR": "Padrão do tema",
+          "value_en_US": "Theme pattern"
+        },
+        {
+          "key": "checkbox-white",
+          "value_pt_BR": "Branco",
+          "value_en_US": "White",
+          "color": "#fff"
+        },
+        {
+          "key": "checkbox-gray",
+          "value_pt_BR": "Cinza",
+          "value_en_US": "Gray",
+          "color": "#333"
+        },
+        {
+          "key": "checkbox-black",
+          "value_pt_BR": "Preto",
+          "value_en_US": "Black",
+          "color": "#000"
+        },
+        {
+          "key": "checkbox-blue",
+          "value_pt_BR": "Azul",
+          "value_en_US": "Blue",
+          "color": "#0247FE"
+        },
+        {
+          "key": "checkbox-light-blue",
+          "value_pt_BR": "Azul claro",
+          "value_en_US": "Light blue",
+          "color": "#85A5FF"
+        },
+        {
+          "key": "checkbox-dark-blue",
+          "value_pt_BR": "Azul escuro",
+          "value_en_US": "Dark blue",
+          "color": "#00217A"
+        },
+        {
+          "key": "checkbox-purple",
+          "value_pt_BR": "Roxo",
+          "value_en_US": "Purple",
+          "color": "#3D01A4"
+        },
+        {
+          "key": "checkbox-light-purple",
+          "value_pt_BR": "Roxo claro",
+          "value_en_US": "Light purple",
+          "color": "#B285FF"
+        },
+        {
+          "key": "checkbox-dark-purple",
+          "value_pt_BR": "Roxo escuro",
+          "value_en_US": "Dark purple",
+          "color": "#2D007A"
+        },
+        {
+          "key": "checkbox-red",
+          "value_pt_BR": "Vermelho",
+          "value_en_US": "Red",
+          "color": "#FE2712"
+        },
+        {
+          "key": "checkbox-light-red",
+          "value_pt_BR": "Vermelho claro",
+          "value_en_US": "Light red",
+          "color": "#FE8F84"
+        },
+        {
+          "key": "checkbox-dark-red",
+          "value_pt_BR": "Vermelho escuro",
+          "value_en_US": "Dark red",
+          "color": "#7A0B00"
+        },
+        {
+          "key": "checkbox-orange",
+          "value_pt_BR": "Laranja",
+          "value_en_US": "Orange",
+          "color": "#FB9B02"
+        },
+        {
+          "key": "checkbox-light-orange",
+          "value_pt_BR": "Laranja claro",
+          "value_en_US": "Light orange",
+          "color": "#FFD085"
+        },
+        {
+          "key": "checkbox-dark-orange",
+          "value_pt_BR": "Laranja escuro",
+          "value_en_US": "Dark orange",
+          "color": "#7A4B00"
+        },
+        {
+          "key": "checkbox-yellow",
+          "value_pt_BR": "Amarelo",
+          "value_en_US": "Yellow",
+          "color": "#FFFF33"
+        },
+        {
+          "key": "checkbox-light-yellow",
+          "value_pt_BR": "Amarelo claro",
+          "value_en_US": "Light yellow",
+          "color": "#FFFF85"
+        },
+        {
+          "key": "checkbox-dark-yellow",
+          "value_pt_BR": "Amarelo escuro",
+          "value_en_US": "Dark Yellow",
+          "color": "#7A7A00"
+        },
+        {
+          "key": "checkbox-green",
+          "value_pt_BR": "Verde",
+          "value_en_US": "Green",
+          "color": "#66B032"
+        },
+        {
+          "key": "checkbox-light-green",
+          "value_pt_BR": "Verde claro",
+          "value_en_US": "Light green",
+          "color": "#B7FF85"
+        },
+        {
+          "key": "checkbox-dark-green",
+          "value_pt_BR": "Verde escuro",
+          "value_en_US": "Dark green",
+          "color": "#337A00"
+        }
+      ]
+    }
+  ],
+  "childrenProperties": [
+    {
+      "name": "checkbox-theme",
+      "selector": "div.form-group",
+      "order": 3
+    },
+    {
+      "name": "ng-initial-value",
+      "selector": "input",
+      "displayName_pt_BR": "Valor Inicial",
+      "displayName_en_US": "Initial Value",
+      "type": "logic",
+      "order": 3
+    },
+    {
+      "name": "crn-allow-null-values",
+      "selector": "input",
+      "displayName_pt_BR": "Permite Valores Nulos",
+      "displayName_en_US": "Allow Null Values",
+      "type": "logic",
+      "order": 4,
+      "mandatory": true
+    },
+    {
+      "name": "ng-model",
+      "selector": "input",
+      "type": "text",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "order": 2,
+      "mandatory": true
+    },
+    {
+      "name": "content",
+      "selector": "label",
+      "displayName_pt_BR": "Título",
+      "displayName_en_US": "Title",
+      "type": "content",
+      "order": 1
+    },
+    {
+      "name": "ng-required",
+      "selector": "input",
+      "type": "logic"
+    },
+    {
+      "name": "ng-click",
+      "selector": "label",
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "label",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "label",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "label",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "label",
+      "type": "event"
+    },
+    {
+      "name": "ng-false-value",
+      "selector": "input",
+      "displayName_pt_BR": "Valor para falso",
+      "displayName_en_US": "Value for false",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = '\\''+result+'\\'';  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].split('\\'').join('') }",
+      "type": "text"
+    },
+    {
+      "name": "ng-true-value",
+      "selector": "input",
+      "displayName_pt_BR": "Valor para verdadeiro",
+      "displayName_en_US": "Value for true",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = '\\''+result+'\\'';  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].split('\\'').join('') }",
+      "type": "text"
+    }
+  ],
+  "styles": [
+    {
+      "selector": "div#{id} .k-checkbox:checked+.k-checkbox-label:before, div#{id} .k-checkbox:checked+.k-checkbox-label:after, div#{id} .k-checkbox:indeterminate+.k-checkbox-label:after",
+      "text_pt_BR": "Caixa de checagem",
+      "text_en_US": "Checkbox"
+    }
+  ]
+}

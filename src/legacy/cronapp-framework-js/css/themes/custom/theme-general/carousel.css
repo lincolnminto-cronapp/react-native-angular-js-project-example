@@ -1,0 +1,5 @@
+.carousel .carousel-caption h1,
+.carousel .carousel-caption h2 {
+    text-shadow: none;
+    color: var(--colorNeutral00);
+}

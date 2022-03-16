@@ -1,0 +1,27 @@
+.ui-notification {
+    border-radius: var(--borderRadiusExtraSmall);
+    padding: var(--distanceMedium);
+    box-shadow: none;
+    background-color: var(--colorDefault40, #474949);
+}
+
+.ui-notification.success {
+    background-color: var(--colorSuccess40, #3cb521);
+}
+
+.ui-notification.warning {
+    background-color: var(--colorWarning40, #d47500);
+}
+
+.ui-notification.error {
+    background-color: var(--colorDanger40, #cd0200);
+}
+
+.ui-notification.info {
+    background-color: var(--colorCalm40, #3399f3);
+}
+
+
+.ui-notification .message {
+    margin: 0;
+}

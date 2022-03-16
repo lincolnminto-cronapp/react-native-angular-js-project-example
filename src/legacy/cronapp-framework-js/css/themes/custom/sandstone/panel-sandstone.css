@@ -1,0 +1,90 @@
+.panel {
+    background-color: var(--backgroundColor40, #ffffff);
+    box-shadow: none;
+}
+
+/* Default */
+.panel-default .panel-heading,
+.panel-default .panel-footer {
+    color: var(--textColor40, #3e3f3a);
+    background-color: var(--colorLight40, #f8f5f0);
+    border-color: transparent
+}
+
+.panel-default {
+    border-color: var(--colorLight50, #d9d7d2);
+}
+
+/* Primary */
+
+.panel-primary>.panel-heading,
+.panel-primary>.panel-footer {
+    color: var(--textColorPrimary40, #ffffff);
+    background-color: var(--colorPrimary40, #325d88);
+    border-color: transparent
+}
+
+.panel-primary {
+    border-color: var(--colorPrimary40, #325d88);
+}
+
+/* Sucess */
+
+.panel-success>.panel-heading,
+.panel-success>.panel-footer {
+    color: var(--textColorSuccess40, #ffffff);
+    background-color: var(--colorSuccess40, #93c54b);
+    border-color: transparent
+}
+
+.panel-success {
+    border-color: var(--colorSuccess40, #93c54b);
+}
+
+/* Info */
+.panel-info>.panel-heading,
+.panel-info>.panel-footer {
+    color: var(--textColorCalm40, #ffffff);
+    background-color: var(--colorCalm40, #29abe0);
+    border-color: transparent
+}
+
+.panel-info {
+    border-color: var(--colorCalm40, #29abe0);
+}
+
+/* Warning */
+.panel-warning>.panel-heading,
+.panel-warning>.panel-footer {
+    color: var(--textColorWarning40, #ffffff);
+    background-color: var(--colorWarning40, #f47c3c);
+    border-color: transparent
+}
+
+.panel-warning {
+    border-color: var(--colorWarning40, #f47c3c);
+}
+
+/* Danger */
+.panel-danger>.panel-heading,
+.panel-danger>.panel-footer {
+    color: var(--textColorDanger40, #ffffff);
+    background-color: var(--colorDanger40, #d9534f);
+    border-color: transparent
+}
+
+.panel-danger {
+    border-color: var(--colorDanger40, #d9534f);
+}
+
+/* Light */
+.panel-light>.panel-heading,
+.panel-light>.panel-footer {
+    color: var(--textColor40, #3e3f3a);
+    background-color: var(--colorLight40, #f8f5f0);
+    border-color: transparent
+}
+
+.panel-light {
+    border-color: var(--colorLight40, #f8f5f0);
+}

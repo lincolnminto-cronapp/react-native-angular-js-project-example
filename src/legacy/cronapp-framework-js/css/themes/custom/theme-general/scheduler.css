@@ -1,0 +1,10 @@
+
+.k-scheduler .k-scheduler-header th,
+.k-scheduler .k-scheduler-header-wrap,
+.k-scheduler .k-scheduler-table td,
+.k-scheduler .k-scheduler-times,
+.k-scheduler .k-scheduler-times th,
+.k-scheduler .k-scheduler-times tr {
+    font-weight: 600;
+    font-size: var(--textNormalSize, 14px);
+}

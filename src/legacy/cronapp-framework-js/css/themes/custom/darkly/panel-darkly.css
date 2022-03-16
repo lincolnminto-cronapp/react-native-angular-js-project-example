@@ -1,0 +1,90 @@
+.panel {
+    background-color: var(--colorDefault60, #323232);
+    box-shadow: none;
+}
+
+/* Default */
+.panel-default .panel-heading,
+.panel-default .panel-footer {
+    color: var(--textColor40, #2c3e50);
+    background-color: var(--colorDefault40, #444444);
+    border-color: transparent
+}
+
+.panel-default {
+    border-color: var(--colorDefault40, #dfe3e3);
+}
+
+/* Primary */
+
+.panel-primary>.panel-heading,
+.panel-primary>.panel-footer {
+    color: var(--textColorPrimary40, #ffffff);
+    background-color: var(--colorPrimary40, #2c3e50);
+    border-color: transparent
+}
+
+.panel-primary {
+    border-color: var(--colorPrimary40, #2c3e50);
+}
+
+/* Sucess */
+
+.panel-success>.panel-heading,
+.panel-success>.panel-footer {
+    color: var(--textColorSuccess40, #ffffff);
+    background-color: var(--colorSuccess40, #18bc9c);
+    border-color: transparent
+}
+
+.panel-success {
+    border-color: var(--colorSuccess40, #18bc9c);
+}
+
+/* Info */
+.panel-info>.panel-heading,
+.panel-info>.panel-footer {
+    color: var(--textColorCalm40, #ffffff);
+    background-color: var(--colorCalm40, #11c1f3);
+    border-color: transparent
+}
+
+.panel-info {
+    border-color: var(--colorCalm40, #11c1f3);
+}
+
+/* Warning */
+.panel-warning>.panel-heading,
+.panel-warning>.panel-footer {
+    color: var(--textColorWarning40, #ffffff);
+    background-color: var(--colorWarning40, #f39c12);
+    border-color: transparent
+}
+
+.panel-warning {
+    border-color: var(--colorWarning40, #f39c12);
+}
+
+/* Danger */
+.panel-danger>.panel-heading,
+.panel-danger>.panel-footer {
+    color: var(--textColorDanger40, #ffffff);
+    background-color: var(--colorDanger40, #c44133);
+    border-color: transparent
+}
+
+.panel-danger {
+    border-color: var(--colorDanger40, #c44133);
+}
+
+/* Light */
+.panel-light>.panel-heading,
+.panel-light>.panel-footer {
+    color: var(--textColorLight40, #000000);
+    background-color: var(--colorLight40, #ecf0f1);
+    border-color: transparent
+}
+
+.panel-light {
+    border-color: var(--colorLight40, #ecf0f1);
+}

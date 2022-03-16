@@ -1,0 +1,21 @@
+{
+    "name": "crn-cron-crud",
+    "text_pt_BR": "CRUD",
+    "text_en_US": "CRUD",
+    "order": 2,
+    "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-cron-crud.svg",
+    "description": "Pacote de componentes para criar CRUD",
+    "description_en_US": "Component package to create CRUD",
+    "category": [
+      "GRIDS", "FORMS"
+    ],
+    "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-crud.template.html",
+    "properties": {
+      "class": {
+        "order": 9999
+      },
+      "id": {
+        "order": 1
+      }
+    }
+  }

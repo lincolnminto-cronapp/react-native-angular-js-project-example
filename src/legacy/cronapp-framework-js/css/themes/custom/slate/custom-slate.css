@@ -1,0 +1,407 @@
+@import 'button-slate.css';
+@import 'panel-slate.css';
+@import 'navbar-slate.css';
+
+/* ==== VARIABLES ==== */
+:root {
+
+    /* Font */
+    --fontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --textColor: #aaaaaa;
+    --backgroundColor: #272b30;
+
+    --textSmallSize: 12px;
+    --textNormalSize: 14px;
+    --textMediumSize: 16px;
+    --textBigSize: 18px;
+    --textExtraBigSize: 23px;
+
+    --textColor10: #e9e9e9;
+    --textColor20: #d6d6d6;
+    --textColor30: #c1c1c1;
+    --textColor40: #aaaaaa;
+    --textColor50: #959595;
+    --textColor60: #7d7d7d;
+    --textColor70: #5d5d5d;
+
+    /* Menus - Sizes and Distances */
+    --menuVerticalWidth: 270px;
+    --menuSideSize: 20px;
+    --menuItemBarSize: 6px;
+    --menuElementOverallPadding: 10px;
+    --menuItemPaddingSize: calc(var(--menuElementOverallPadding) + 5px);
+    --menuItemIconWidth: 25px;
+
+    /* Background */
+    --backgroundColor10: #d6d7d7;
+    --backgroundColor20: #b0b0b1;
+    --backgroundColor30: #808182;
+    --backgroundColor40: #272b30;
+    --backgroundColor50: #22262a;
+    --backgroundColor60: #1d2023;
+    --backgroundColor70: #15181a;
+
+    /* Distances */
+    --distanceNone: 0;
+    --distanceSmallest: 5px;
+    --distanceExtraSmall: 10px;
+    --distanceSmall: 15px;
+    --distanceMedium: 20px;
+    --distanceBig: 30px;
+    --distanceGiant: 40px;
+    --distanceTitan: 60px;
+
+    /* Border Radius */
+    --borderRadiusNone: 0;
+    --borderRadiusSmallest: 5px;
+    --borderRadiusExtraSmall: 10px;
+    --borderRadiusSmall: 15px;
+    --borderRadiusBig: 30px;
+    --borderRadiusGiant: 40px;
+    --borderRadiusTitan: 60px;
+    --borderRadiusFull: 99999px;
+
+    /* Color - Theme default */
+    --colorDefault10: #d8d8d9;
+    --colorDefault20: #b3b4b5;
+    --colorDefault30: #858789;
+    --colorDefault40: #3a3f44;
+    --colorDefault50: #33373c;
+    --colorDefault60: #2a2e32;
+    --colorDefault70: #202325;
+    --textColorDefault10: #8c8c8c;
+    --textColorDefault20: #bbbbbb;
+    --textColorDefault30: #dfdfdf;
+    --textColorDefault40: #ffffff;
+    --textColorDefault50: #ffffff;
+    --textColorDefault60: #ffffff;
+    --textColorDefault70: #ffffff;
+
+    /* Color - Primary - positive */
+    --colorPrimary10: #e0e1e2;
+    --colorPrimary20: #c3c6c8;
+    --colorPrimary30: #a3a8ab;
+    --colorPrimary40: #7a8288;
+    --colorPrimary50: #6b7277;
+    --colorPrimary60: #595f64;
+    --colorPrimary70: #43474a;
+    --textColorPrimary10: #8c8c8c;
+    --textColorPrimary20: #bbbbbb;
+    --textColorPrimary30: #dfdfdf;
+    --textColorPrimary40: #ffffff;
+    --textColorPrimary50: #ffffff;
+    --textColorPrimary60: #ffffff;
+    --textColorPrimary70: #ffffff;
+
+    /* Color - Success - balanced */
+    --colorSuccess10: #dcefdc;
+    --colorSuccess20: #bce1bc;
+    --colorSuccess30: #96d396;
+    --colorSuccess40: #62c462;
+    --colorSuccess50: #56ac56;
+    --colorSuccess60: #489048;
+    --colorSuccess70: #366b36;
+    --textColorSuccess10: #8c8c8c;
+    --textColorSuccess20: #bbbbbb;
+    --textColorSuccess30: #dfdfdf;
+    --textColorSuccess40: #ffffff;
+    --textColorSuccess50: #ffffff;
+    --textColorSuccess60: #ffffff;
+    --textColorSuccess70: #ffffff;
+
+    /* Color - Warning (web) - energized (mobile) */
+    --colorWarning10: #fde4d5;
+    --colorWarning20: #fbcdae;
+    --colorWarning30: #fab37b;
+    --colorWarning40: #f89406;
+    --colorWarning50: #d98205;
+    --colorWarning60: #b66c04;
+    --colorWarning70: #885103;
+    --textColorWarning10: #8c8c8c;
+    --textColorWarning20: #bbbbbb;
+    --textColorWarning30: #dfdfdf;
+    --textColorWarning40: #ffffff;
+    --textColorWarning50: #ffffff;
+    --textColorWarning60: #ffffff;
+    --textColorWarning70: #ffffff;
+
+    /* Color - Danger (web) - assertive (mobile) */
+    --colorDanger10: #fadcdb;
+    --colorDanger20: #f6bbba;
+    --colorDanger30: #f29593;
+    --colorDanger40: #ee5f5b;
+    --colorDanger50: #d05350;
+    --colorDanger60: #ae4643;
+    --colorDanger70: #823432;
+    --textColorDanger10: #8c8c8c;
+    --textColorDanger20: #bbbbbb;
+    --textColorDanger30: #dfdfdf;
+    --textColorDanger40: #ffffff;
+    --textColorDanger50: #ffffff;
+    --textColorDanger60: #ffffff;
+    --textColorDanger70: #ffffff;
+
+
+    /* Color - Royal (mobile) */
+    --colorRoyal10: #e2ddf9;
+    --colorRoyal20: #c8bef4;
+    --colorRoyal30: #ab9aef;
+    --colorRoyal40: #886aea;
+    --colorRoyal50: #775dcd;
+    --colorRoyal60: #644eab;
+    --colorRoyal70: #4a3a80;
+
+    --textColorRoyal10: #8c8c8c;
+    --textColorRoyal20: #bbbbbb;
+    --textColorRoyal30: #dfdfdf;
+    --textColorRoyal40: #ffffff;
+    --textColorRoyal50: #ffffff;
+    --textColorRoyal60: #ffffff;
+    --textColorRoyal70: #ffffff;
+
+    /* Color - Calm (mobile) */
+    --colorCalm10: #dbeef6;
+    --colorCalm20: #badfee;
+    --colorCalm30: #93d0e6;
+    --colorCalm40: #5bc0de;
+    --colorCalm50: #50a8c2;
+    --colorCalm60: #438da3;
+    --colorCalm70: #32697a;
+    --textColorCalm10: #8c8c8c;
+    --textColorCalm20: #bbbbbb;
+    --textColorCalm30: #dfdfdf;
+    --textColorCalm40: #ffffff;
+    --textColorCalm50: #ffffff;
+    --textColorCalm60: #ffffff;
+    --textColorCalm70: #ffffff;
+
+    /* Color - Light (mobile) */
+    --colorLight10: #f9f9fa;
+    --colorLight20: #f3f5f7;
+    --colorLight30: #eef1f3;
+    --colorLight40: #e9ecef;
+    --colorLight50: #cccfd1;
+    --colorLight60: #abadaf;
+    --colorLight70: #808183;
+    --textColorLight10: #000000;
+    --textColorLight20: #000000;
+    --textColorLight30: #000000;
+    --textColorLight40: #000000;
+    --textColorLight50: #7b7b7b;
+    --textColorLight60: #aeaeae;
+    --textColorLight70: #d5d5d5;
+
+    /* Color - Stable (mobile) */
+    --colorStable10: #fdfdfd;
+    --colorStable20: #fbfbfb;
+    --colorStable30: #fafafa;
+    --colorStable40: #f8f8f8;
+    --colorStable50: #d9d9d9;
+    --colorStable60: #b6b6b6;
+    --colorStable70: #888888;
+
+    --textColorStable10: #252525;
+    --textColorStable20: #323232;
+    --textColorStable30: #3c3c3c;
+    --textColorStable40: #444444;
+    --textColorStable50: #898989;
+    --textColorStable60: #b5b5b5;
+    --textColorStable70: #d9d9d9;
+
+    /* Color - Dark (mobile) */
+    --colorDark10: #d6d7d7;
+    --colorDark20: #b0b0b1;
+    --colorDark30: #808182;
+    --colorDark40: #272b30;
+    --colorDark50: #22262a;
+    --colorDark60: #1d2023;
+    --colorDark70: #15181a;
+    --textColorDark10: #8c8c8c;
+    --textColorDark20: #bbbbbb;
+    --textColorDark30: #dfdfdf;
+    --textColorDark40: #ffffff;
+    --textColorDark50: #ffffff;
+    --textColorDark60: #ffffff;
+    --textColorDark70: #ffffff;
+
+    /* Color - Neutral (web e mobile) */
+    --colorNeutral00: #FFFFFF;
+    --colorNeutral10: #F1F1F1;
+    --colorNeutral20: #E3E3E3;
+    --colorNeutral30: #D5D5D5;
+    --colorNeutral40: #C7C7C7;
+    --colorNeutral50: #B9B9B9;
+    --colorNeutral60: #ACACAC;
+    --colorNeutral70: #9E9E9E;
+    --colorNeutral80: #909090;
+    --colorNeutral90: #828282;
+    --colorNeutral100: #747474;
+    --colorNeutral110: #666666;
+    --colorNeutral120: #5D5D5D;
+    --colorNeutral130: #535353;
+    --colorNeutral140: #4A4A4A;
+    --colorNeutral150: #414141;
+    --colorNeutral160: #383838;
+    --colorNeutral170: #2E2E2E;
+    --colorNeutral180: #252525;
+    --colorNeutral190: #1C1C1C;
+    --colorNeutral200: #131313;
+    --colorNeutral210: #090909;
+    --colorNeutral220: #000000;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    color: var(--textColor30, #c1c1c1);
+}
+
+/* Modal */
+.modal-title {
+    color: var(--textColor30, #c1c1c1);
+}
+
+.modal-header,
+.modal-footer {
+    border-color: var(--backgroundColor70, #15181a);
+}
+
+.list-group-item,
+.modal-content {
+    background-color: var(--backgroundColor40, #272b30);
+}
+
+
+/* Slider */
+.k-slider .k-slider-selection {
+    background-color: var(--backgroundColor50, #22262a);
+}
+
+
+/* Treeview */
+.k-treeview .k-item {
+    background-color: var(--colorDefault40, #3a3f44);
+    color: var(--textColorDefault40, #ffffff);
+}
+
+.k-treeview .k-in.k-state-selected {
+    background-color: var(--colorDefault70);
+    color: var(--textColorDefault40, #ffffff);
+}
+
+.k-treeview .k-in.k-state-hover {
+    background-color: var(--colorDefault60);
+    color: var(--textColorDefault40, #ffffff);
+}
+
+/* Grid */
+.k-grid tr:hover {
+    background-color: var(--colorDefault40, #3a3f44);
+    color: var(--textColorDefault40, #ffffff);
+}
+
+.k-state-selected,
+.k-state-selected:link,
+.k-state-selected:visited,
+.k-tool.k-state-selected,
+.k-grid td.k-state-selected:hover,
+.k-grid tr.k-state-selected:hover td {
+    background-color: var(--backgroundColor50, #dfdfdf);
+    color: var(--textColorDefault40, #444444);
+}
+
+/* Page login */
+.siginPanel,
+.login-view {
+    background-color: var(--backgroundColor40, #ffffff);
+}
+
+#crn-botao-cadastre,
+.login-view .sign-up,
+.crn-anchor-signup-back {
+    color: var(--textColor40, #555555);
+}
+
+/* Link */
+a,
+a:focus,
+a:active {
+    color: var(--colorPrimary40, #7a8288);
+}
+
+a:hover {
+    color: var(--colorPrimary40, #7a8288);
+}
+
+/* Input */
+.k-autocomplete .k-input,
+.k-multiselect-wrap,
+.k-textbox>input,
+.form-control {
+    box-shadow: none;
+    border: none;
+}
+
+/* Banner */
+
+.jumbotron {
+    background-color: var(--backgroundColor60, #1d2023);
+    border: 1.5px solid var(--backgroundColor70, #15181a);
+}
+
+.jumbotron .h1,
+.jumbotron h1,
+.jumbotron .h2,
+.jumbotron h2 {
+    color: var(--textColor40, #aaaaaa);
+}
+
+
+/* Abas */
+.ctn-tab .nav-tabs {
+    border-bottom: 1px solid var(--backgroundColor70);
+}
+
+.ctn-tab .nav-tabs li a:hover,
+.ctn-tab .nav-tabs li.active a,
+.ctn-tab .nav-tabs li.active a:focus,
+.ctn-tab .nav-tabs li.active a:hover,
+.ctn-tab .nav-tabs li a {
+    color: var(--textColorDefault40);
+}
+
+.ctn-tab .nav-tabs li a {
+    border: 1px solid transparent;
+}
+
+.ctn-tab .nav-tabs li.active {
+    border-color: var(--backgroundColor70);
+    border-bottom: 1px solid var(--backgroundColor40);
+    background-color: var(--colorDefault40);
+}
+
+.ctn-tab .nav-tabs li a:hover {
+    background-color: var(--colorDefault40);
+    border-radius: 4px 4px 0 0;
+    border: 1px solid var(--backgroundColor70);
+    border-bottom: 0;
+}
+
+.ctn-tab .nav-tabs li.active a,
+.ctn-tab .nav-tabs li.active a:focus,
+.ctn-tab .nav-tabs li.active a:hover {
+    border: 0;
+}
+
+.ctn-tab .nav-tabs li {
+    margin-right: 4px;
+}

@@ -1,0 +1,85 @@
+{
+  "name": "crn-subtitle",
+  "text_pt_BR": "Subtítulo",
+  "text_en_US": "Subtitle",
+  "pallete": false,
+  "wrapper": false,
+  "class": "adjust-icon mdi mdi-format-header-2",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/subtitle.template.html",
+  "properties": {
+    "ng-init": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-click": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-dblclick": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseenter": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mouseleave": {
+      "removable": true,
+      "type": "event"
+    },
+    "ng-mousemove": {
+      "removable": true,
+      "type": "event"
+    },
+    "xattr-position": {
+      "displayName_pt_BR": "Posição do texto",
+      "displayName_en_US": "Text position",
+      "order": 2
+    },
+    "content": {
+      "displayName_pt_BR": "Título",
+      "displayName_en_US": "Title",
+      "order": 1
+    },
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 3
+    }
+  },
+  "styles": [
+    {
+      "selector": "div#{id} h2",
+      "text_pt_BR": "Subtítulo",
+      "text_en_US": "Subtitle"
+    }
+  ],
+  "attributesForPreview": [
+    {
+      "name": "xattr-position",
+      "type": "btngroup",
+      "target": "class",
+      "values": [
+        {
+          "key": "text-left",
+          "value_pt_BR": "Esquerda",
+          "value_en_US": "Left",
+          "icon": "mdi mdi-ray-start"
+        },
+        {
+          "key": "text-center",
+          "value_pt_BR": "Centro",
+          "value_en_US": "Center",
+          "icon": "mdi mdi-ray-vertex"
+        },
+        {
+          "key": "text-right",
+          "value_pt_BR": "Direita",
+          "value_en_US": "Right",
+          "icon": "mdi mdi-ray-end"
+        }
+      ]
+    }
+  ]
+}

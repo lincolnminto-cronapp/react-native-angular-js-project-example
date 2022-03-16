@@ -1,0 +1,71 @@
+
+<div teste="thiag" class="ng-scope k-grid k-widget k-display-block" data-role="grid"  ng-init="attrs.options = attrs.options || {'allowPaging': true, 'editable': 'inline', 'columns': []}">
+    <div class="k-header k-grid-toolbar" ng-if="attrs.options.editable && attrs.options.editable != 'no' && attrs.options.toolBarButtons.length">
+
+        <literal ng-repeat="item in attrs.options.toolBarButtons">
+            <a role="button" ng-if="item.type=='Native' && item.title=='create'" class="k-button k-button-icontext k-grid-add" href="#">
+                <span class="k-icon k-i-plus"></span>{{'ADD'|translate}}
+            </a>
+            <a role="button" ng-if="item.type=='Native' && item.title=='pdf'" class="k-button k-button-icontext k-grid-pdf" href="#">
+                <span class="k-icon k-i-file-pdf"></span>Exportar para PDF
+            </a>
+            <a role="button" ng-if="item.type=='Native' && item.title=='excel'" class="k-button k-button-icontext k-grid-excel" href="#">
+                <span class="k-icon k-i-file-excel"></span>Exportar para Excel
+            </a>
+            <a ng-if="item.type=='Customized'" class="k-button k-grid-custom ng-scope" href="javascript:void(0)">
+                <span class="{{item.iconClass}}"></span>{{item.title}}
+            </a>
+            <literal ng-if="item.type=='Title'" ng-bind-html="item.template"/>
+        </literal>
+    </div>
+    <div ng-if="attrs.options.allowGrouping"  class="k-grouping-header" data-role="droptarget">Arraste aqui o cabeçalho de uma coluna para agrupar por esta coluna</div>
+    <table role="grid" data-role="selectable" class="k-selectable" style="touch-action: pan-x pan-y;">
+        <colgroup>
+            <col ng-repeat="item in attrs.options.columns" ng-if="item.visible">
+        </colgroup>
+        <thead class="k-grid-header" role="rowgroup">
+        <tr role="row" class="k-state-selected" aria-selected="true">
+
+
+            <th ng-repeat="item in attrs.options.columns" ng-if="item.visible" scope="col" role="columnheader" data-field="email" aria-haspopup="true" rowspan="1" data-title="Email" data-index="0" id="2b4d0eb0-1cc1-4f89-927b-b8c1fbcf430e" style="text-align: left;" class="k-header k-with-icon k-filterable" data-role="columnsorter">
+                <a class="k-link" href="#">{{item.headerText?parseProperty(item.headerText):''}}</a>
+                <a ng-if="item.filterable && tem.dataType != 'Customized' && item.dataType != 'Command'" class="k-grid-filter" href="#" title="Filtrar" aria-label="Filtrar" tabindex="0">
+                    <span class="k-icon k-i-filter"></span>
+                </a>
+            </th>
+        </tr>
+        </thead>
+        <tbody role="rowgroup">
+        <tr data-uid="59430dcb-6ccd-497d-954d-9b5569408cb4" role="row">
+
+            <td ng-repeat="item in attrs.options.columns | filter: {visible:true}" role="gridcell" class="{{item.dataType == 'Command'|| item.dataType == 'Customized'?'k-command-cell':''}}">
+
+                <span ng-if="item.dataType != 'Customized' && item.dataType != 'Command'">{{item.headerText?parseProperty(item.headerText):''}}</span>
+                <a ng-if="item.dataType == 'Command' && (item.command == 'edit|destroy' || item.command == 'edit')" role="button" class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-i-edit"></span> </a>
+                <a ng-if="item.dataType == 'Command' && (item.command == 'edit|destroy' || item.command == 'destroy')" role="button" class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-i-close"></span> </a>
+                <a ng-if="item.dataType == 'Customized'" href="" class="k-button k-custom-command k-button-with-label k-grid-f06e"><span class="{{item.iconClass}}"></span>&nbsp;{{item.headerText?parseProperty(item.headerText):''}}</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div ng-if="attrs.options.allowPaging"  class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager">
+        <a href="#" aria-label="Ir para a primeira página" title="Ir para a primeira página" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-end-left"></span></a><a href="#" aria-label="Ir para a página anterior" title="Ir para a página anterior" class="k-link k-pager-nav k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-60-left"></span></a>
+        <ul class="k-pager-numbers k-reset">
+            <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+            <li><span class="k-state-selected">1</span></li>
+        </ul>
+        <a href="#" aria-label="Ir para a próxima página" title="Ir para a próxima página" class="k-link k-pager-nav k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-60-right"></span></a><a href="#" aria-label="Ir para a última página" title="Ir para a última página" class="k-link k-pager-nav k-pager-last k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-end-right"></span></a>
+        <span class="k-pager-sizes k-label">
+         <span title="" class="k-widget k-dropdown" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="6c3f63f1-4078-411d-97f1-23ab73b456fd_listbox" aria-live="polite" aria-disabled="false" aria-busy="false" aria-activedescendant="80106605-38e7-4b05-a056-a1c5bbdbc94d">
+            <span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">100</span><span unselectable="on" class="k-select" aria-label="select"><span class="k-icon k-i-arrow-60-down"></span></span></span>
+            <select data-role="dropdownlist" style="display: none;" aria-label="100">
+               <option value="all">Todos</option>
+               <option value="5">5</option>
+               <option value="10">10</option>
+               <option value="20">20</option>
+            </select>
+         </span>
+      </span>
+        <a ng-if="attrs.options.allowRefreshGrid" href="#" class="k-pager-refresh k-link" title="Atualizar" aria-label="Atualizar" tabindex="0"><span class="k-icon k-i-reload"></span></a><span class="k-pager-info k-label">Exibindo itens 1 - 1 de 1</span>
+    </div>
+</div>

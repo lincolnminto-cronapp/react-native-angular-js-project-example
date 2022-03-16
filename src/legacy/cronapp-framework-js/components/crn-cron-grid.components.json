@@ -1,0 +1,228 @@
+{
+  "name": "crn-cron-grid",
+  "onDrop": "openEditor",
+  "onDoubleClick": "openEditor",
+  "text_pt_BR": "Grade",
+  "text_en_US": "Grid",
+  "order": 2,
+  "image": "/node_modules/cronapp-framework-js/img/cron-icon/crn-grid.svg",
+  "description": "Tabela com repetidor de valores da fonte de dados",
+  "description_en_US": "Table with data source value repeater",
+  "category": [
+    "GRIDS"
+  ],
+  "designTimeDynamic": true,
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-grid.designtime.html",
+  "designTimeSelector": "cron-grid",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cron-grid.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "options",
+      "displayName_pt_BR": "Configurações",
+      "displayName_en_US": "Configuration",
+      "removable": false,
+      "global": "true",
+      "selector": "cron-grid",
+      "type": "text",
+      "order": 1,
+      "mandatory": true
+    },
+    {
+      "name": "ng-model",
+      "selector": "cron-grid",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "type": "text",
+      "order": 2,
+      "mandatory": true
+    },
+    {
+      "name": "scrollable",
+      "displayName_pt_BR": "Fixar cabeçalho",
+      "displayName_en_US": "Pin header",
+      "selector": "cron-grid",
+      "type": "logic",
+      "mandatory": false,
+      "global": "false",
+      "removable": true
+    },
+    {
+      "name": "ng-edit",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Ao Editar",
+      "displayName_en_US": "On Edit",
+      "type": "event"
+    },
+    {
+      "name": "ng-change",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Ao Alterar",
+      "displayName_en_US": "On Change",
+      "type": "event"
+    },
+    {
+      "name": "ng-cancel",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Ao Cancelar",
+      "displayName_en_US": "On Cancel",
+      "type": "event"
+    },
+    {
+      "name": "ng-data-bound",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Ao Vincular Dados",
+      "displayName_en_US": "On Data Bound",
+      "type": "event"
+    },
+    {
+      "name": "ng-before-edit",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Antes de Editar",
+      "displayName_en_US": "Before Edit",
+      "type": "event"
+    },
+    {
+      "name": "ng-data-binding",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Ao Ligar os dados",
+      "displayName_en_US": "On Data Binding",
+      "type": "event"
+    },
+    {
+      "name": "ng-save",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Ao Salvar",
+      "displayName_en_US": "On Save",
+      "type": "event"
+    },
+    {
+      "name": "ng-save-changes",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Ao Salvar Alterações",
+      "displayName_en_US": "On Save Changes",
+      "type": "event"
+    },
+    {
+      "name": "ng-remove",
+      "selector": "cron-grid",
+      "displayName_pt_BR": "Ao Remover",
+      "displayName_en_US": "On Remove",
+      "type": "event"
+    }
+  ],
+  "styles": [
+    {
+      "selector": "#{id} .k-grid .k-grid-toolbar",
+      "text_pt_BR": "Barra de Ferramentas",
+      "text_en_US": "Toolbar"
+    },
+    {
+      "selector": "#{id} .k-grid .k-header .k-grid-add",
+      "text_pt_BR": "Botão de Adicionar",
+      "text_en_US": "Add Button"
+    },
+    {
+      "selector": "#{id} .k-grid .k-header .k-grid-save-changes",
+      "text_pt_BR": "Botão de Salvar Alterações",
+      "text_en_US": "Save Changes Button"
+    },
+    {
+      "selector": "#{id} .k-grid .k-header .k-grid-cancel-changes",
+      "text_pt_BR": "Botão de Cancelar Alteração",
+      "text_en_US": "Cancel Changes Button"
+    },
+    {
+      "selector": "#{id} .k-grid .k-grouping-header",
+      "text_pt_BR": "Agrupar Colunas",
+      "text_en_US": "Column Group"
+    },
+    {
+      "selector": "#{id} .k-grouping-row",
+      "text_pt_BR": "Item Agrupado",
+      "text_en_US": "Grouped Item"
+    },
+    {
+      "selector": "  #{id} .k-grid th.k-header, #{id} .k-grid th.k-header thead tr[role=\"row\"] a, #{id} .k-grid-header .k-header a.k-link, #{id} .k-grid-header",
+      "text_pt_BR": "Cabeçalho",
+      "text_en_US": "Header"
+    },
+    {
+      "selector": "#{id} .k-grid-header .k-grid-filter",
+      "text_pt_BR": "Ícone do Filtro",
+      "text_en_US": "Filter Icon"
+    },
+    {
+      "selector": "#{id} .k-grid tbody",
+      "text_pt_BR": "Linha Padrão",
+      "text_en_US": "Default Row"
+    },
+    {
+      "selector": "#{id} .k-grid tr.k-alt",
+      "text_pt_BR": "Linha Alternada",
+      "text_en_US": "Alternate Row"
+    },
+    {
+      "selector": "#{id} .k-grid tr.k-state-selected",
+      "text_pt_BR": "Linha Selecionada",
+      "text_en_US": "Selected Row"
+    },
+    {
+      "selector": ".k-list-container .k-button.k-state-hover",
+      "text_pt_BR": "Ao passar o mouse no botão de ação",
+      "text_en_US": "On mouse hover the action button"
+    },
+    {
+      "selector": "#{id} .k-grid tbody .k-grid-edit",
+      "text_pt_BR": "Botão de ação Editar",
+      "text_en_US": "Edit action button"
+    },
+    {
+      "selector": "#{id} .k-grid tbody .k-grid-delete",
+      "text_pt_BR": "Botão de ação Deletar",
+      "text_en_US": "Delete action button"
+    },
+    {
+      "selector": "#{id} .k-grid tbody .k-grid-update",
+      "text_pt_BR": "Botão de ação Atualizar",
+      "text_en_US": "Update action button"
+    },
+    {
+      "selector": "#{id} .k-grid tbody .k-grid-cancel",
+      "text_pt_BR": "Botão de ação Cancelar",
+      "text_en_US": "Cancel action button"
+    },
+    {
+      "selector": "#{id} .k-grid .k-pager-wrap, #{id} .k-pager-info.k-label, #{id} .k-grid .k-pager-wrap .k-dropdown .k-dropdown-wrap, #{id} .k-grid .k-pager-wrap .k-dropdown .k-dropdown-wrap .k-input",
+      "text_pt_BR": "Área de paginação",
+      "text_en_US": "Pagination Container"
+    },
+    {
+      "selector": ".k-animation-container .k-list-container, .k-animation-container .k-popup .k-list .k-item",
+      "text_pt_BR": "Caixa de seleção da Paginação",
+      "text_en_US": "Pagination Combobox"
+    },
+    {
+      "selector": " .k-list .k-item.k-state-focused",
+      "text_pt_BR": "Paginação selecionada",
+      "text_en_US": "Selected paging"
+    },
+    {
+      "selector": "#{id} .k-grid .k-pager-numbers .k-state-selected",
+      "text_pt_BR": "Marcador da Página Atual",
+      "text_en_US": "Current Page Marker"
+    },
+    {
+      "selector": "#{id} .k-grid-toolbar .k-grid-custom",
+      "text_pt_BR": "Botão Customizável",
+      "text_en_US": "Custom Button"
+    }
+  ]
+}
