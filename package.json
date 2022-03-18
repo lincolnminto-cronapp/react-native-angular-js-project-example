@@ -19,6 +19,7 @@
     "angular": "^1.8.2",
     "angular-ui-router": "1.0.29",
     "angular2react": "^3.0.2",
+    "react2angular": "^4.0.6",
     "cronapi-js": "^2.8.22",
     "cronapp-common-js": "^2.8.13",
     "cronapp-framework-js": "^2.8.37",

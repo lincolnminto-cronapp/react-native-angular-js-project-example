@@ -2379,7 +2379,7 @@
   resolved "https://registry.yarnpkg.com/@teamthread/strict-css-modules-loader/-/strict-css-modules-loader-0.0.3.tgz#5ab96e505eaf7c75c02bad7610185cce5b88128a"
   integrity sha512-BW5+uJZsf48suf31qYlfQyIlp6JMD5mHEKyUy7NI7+SXcGSD140+JOe2PvHInKNw8gsY6kevxFgo/P+6nLZq6A==
 
-"@types/angular@^1.6.34", "@types/angular@^1.8.4":
+"@types/angular@^1.6.34", "@types/angular@^1.6.39", "@types/angular@^1.8.4":
   version "1.8.4"
   resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.8.4.tgz#a2cc163e508389c51d4c4119ebff6b9395cec472"
   integrity sha512-wPS/ncJWhyxJsndsW1B6Ta8D4mi97x1yItSu+rkLDytU3oRIh2CFAjMuJceYwFAh9+DIohndWM0QBA9OU2Hv0g==
@@ -2482,6 +2482,18 @@
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
+
+"@types/lodash.frompairs@^4.0.5":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@types/lodash.frompairs/-/lodash.frompairs-4.0.6.tgz#09b082c10fa753dc2001302b75ac79ca1e0a9ea3"
+  integrity sha512-rwCUf4NMKhXpiVjL/RXP8YOk+rd02/J4tACADEgaMXRVnzDbSSlBMKFZoX/ARmHVLg3Qc98Um4PErGv8FbxU7w==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*", "@types/lodash@^4.14.85":
+  version "4.14.180"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.180.tgz#4ab7c9ddfc92ec4a887886483bc14c79fb380670"
+  integrity sha512-XOKXa1KIxtNXgASAnwj7cnttJxS4fksBRywK/9LzRV5YxrF80BXZIGeQSuoESQ/VkUj30Ae0+YcuHc15wJCB2g==
 
 "@types/minimatch@*":
   version "3.0.3"
@@ -3008,7 +3020,7 @@ angular2react@^3.0.2:
     lodash.kebabcase "^4.1.1"
     ngimport "^1.0.0"
 
-angular@1.8.2, angular@1.x, angular@^1.8.0, angular@^1.8.2:
+angular@1.8.2, angular@1.x, angular@>=1.5, angular@>=1.5.0, angular@^1.8.0, angular@^1.8.2:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.8.2.tgz#5983bbb5a9fa63e213cb7749199e0d352de3a2f1"
   integrity sha512-IauMOej2xEe7/7Ennahkbb5qd/HFADiNuLSESz9Q27inmi32zB0lnAsFeLEWcox3Gd1F6YhNd1CP7/9IukJ0Gw==
@@ -8620,7 +8632,7 @@ lodash@^4.17.11:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
-lodash@^4.17.12, lodash@^4.17.14:
+lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.4:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -9560,6 +9572,16 @@ ng-mask@3.0.12:
   resolved "https://registry.yarnpkg.com/ng-mask/-/ng-mask-3.0.12.tgz#bcca5d114886cf547e56ec1daef30819df1cd2df"
   integrity sha1-vMpdEUiGz1R+VuwdrvMIGd8c0t8=
 
+ngcomponent@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/ngcomponent/-/ngcomponent-4.1.0.tgz#793e379138f552ea0cd2c767ad0aa7057678e228"
+  integrity sha512-cGL3iVoqMWTpCfaIwgRKhdaGqiy2Z+CCG0cVfjlBvdqE8saj8xap9B4OTf+qwObxLVZmDTJPDgx3bN6Q/lZ7BQ==
+  dependencies:
+    "@types/angular" "^1.6.39"
+    "@types/lodash" "^4.14.85"
+    angular ">=1.5.0"
+    lodash "^4.17.4"
+
 ngimport@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ngimport/-/ngimport-1.0.0.tgz#2c3be7ede69599a0c79af3aec8d6413bf20f4ff1"
@@ -10129,7 +10151,7 @@ p-try@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1"
 
-"pace@github:HubSpot/pace#v0.7.8":
+pace@HubSpot/pace#v0.7.8:
   version "0.7.8"
   resolved "https://codeload.github.com/HubSpot/pace/tar.gz/b736335d0073770baf9db00e2edcf0cdfc16bc90"
 
@@ -10926,7 +10948,7 @@ range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
-raphael@^2.2.8, "raphael@github:DmitryBaranovskiy/raphael#v2.3.0":
+raphael@DmitryBaranovskiy/raphael#v2.3.0, raphael@^2.2.8:
   version "2.3.0"
   resolved "https://codeload.github.com/DmitryBaranovskiy/raphael/tar.gz/d8fbe4be81d362837f95e33886b80fb41de443b4"
   dependencies:
@@ -11120,6 +11142,16 @@ react-timer-mixin@^0.13.4:
   version "0.13.4"
   resolved "https://registry.yarnpkg.com/react-timer-mixin/-/react-timer-mixin-0.13.4.tgz#75a00c3c94c13abe29b43d63b4c65a88fc8264d3"
   integrity sha512-4+ow23tp/Tv7hBM5Az5/Be/eKKF7DIvJ09voz5LyHGQaqqz9WV8YMs31eFvcYQs7d451LSg7kDJV70XYN/Ug/Q==
+
+react2angular@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/react2angular/-/react2angular-4.0.6.tgz#ec49ef834d101c9a320e25229fc5afa5b29edc4f"
+  integrity sha512-MDl2WRoTyu7Gyh4+FAIlmsM2mxIa/DjSz6G/d90L1tK8ZRubqVEayKF6IPyAruC5DMhGDVJ7tlAIcu/gMNDjXg==
+  dependencies:
+    "@types/lodash.frompairs" "^4.0.5"
+    angular ">=1.5"
+    lodash.frompairs "^4.0.1"
+    ngcomponent "^4.1.0"
 
 react@16.9.0:
   version "16.9.0"
@@ -13049,7 +13081,7 @@ uglify-es@^3.1.9:
     commander "~2.12.1"
     source-map "~0.6.1"
 
-"ui-select-infinity@github:hyzhak/ui-select-infinity#v0.1.5":
+ui-select-infinity@hyzhak/ui-select-infinity#v0.1.5:
   version "0.1.5"
   resolved "https://codeload.github.com/hyzhak/ui-select-infinity/tar.gz/1be46401d56a477c90eeb3c957fee4dbb8cea619"
 

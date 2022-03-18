@@ -36,6 +36,10 @@
 </div>
 <div ui-view="" id="main-view" tabindex="-1" role="main" class="container-fluid main-view main-view-horizontal">
     <h1 class="component-holder text-left h3 title">{{'Home.view.Home' | translate}}</h1>
+    <button class="btn btn-default " ng-click="count = count+1">Angular JS Button {{count}}</button> 
+
+    <my-react-component count="count"></my-react-component>
+
 </div>
 <div class="modal fade" id="modalPassword">
   <div class="modal-dialog">
