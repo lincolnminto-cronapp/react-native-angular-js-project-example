@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
+const keysTransformer = require('ts-transformer-keys/transformer').default;
 
 module.exports = {
   entry: ['./polyfills', 'react-hot-loader/patch', './index.web.js'],
@@ -84,13 +85,33 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+        options: {
+          // make sure not to set `transpileOnly: true` here, otherwise it will not work
+          getCustomTransformers: (program) => ({
+            before: [keysTransformer(program)],
+          }),
+        },
+      },
     ],
   },
   resolve: {
     alias: {
       'react-native': 'react-native-web',
     },
-    extensions: ['.web.js', '.js', '.web.jsx', '.jsx', 'json', 'html'],
+    extensions: [
+      '.tsx',
+      '.ts',
+      '.web.js',
+      '.js',
+      '.web.jsx',
+      '.jsx',
+      'json',
+      'html',
+    ],
     mainFields: ['browser', 'main'],
   },
 };
