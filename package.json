@@ -13,6 +13,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
+    "@babel/standalone": "^7.17.8",
     "@types/angular": "^1.8.4",
     "@types/react": "16.9.0",
     "@types/react-dom": "16.9.0",
@@ -36,7 +37,8 @@
     "react-native-fontawesome": "^5.7.0",
     "react-native-web": "^0.12.2",
     "react2angular": "^4.0.6",
-    "ts-transformer-keys": "^0.4.3"
+    "ts-transformer-keys": "^0.4.3",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/compat-data": "^7.9.0",
@@ -45,7 +47,9 @@
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
     "@teamthread/strict-css-modules-loader": "^0.0.3",
+    "@types/babel__standalone": "^7.1.4",
     "@types/react-native": "^0.67.3",
+    "@types/uuid": "^8.3.4",
     "autoprefixer": "^9.5.1",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.5",

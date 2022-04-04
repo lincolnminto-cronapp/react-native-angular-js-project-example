@@ -1,11 +1,11 @@
 import angular from 'angular';
 import React, {Component, useEffect, useState} from 'react';
 import reactDom, {createPortal} from 'react-dom';
-import './cronapp-components/DirectiveComponent';
+import { Button, Modal, View } from 'react-native';
+import {loadReactNativeComponents} from './cronapp-components/ReactNativeComponents';
+import second from './cronapp-components/ReactCodeElement'
 
-const Button = ()=>{
-  return <></>
-}
+loadReactNativeComponents();
 
 const App = () => {
   return (
@@ -23,5 +23,4 @@ const App = () => {
 
 module.exports = {
   App,
-  Button
 };
